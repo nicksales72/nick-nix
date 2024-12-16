@@ -16,14 +16,14 @@
     alacritty
     google-chrome
     discord
-    git
     neofetch
     ranger
     zathura
     prismlauncher
     cabal-install
     ghc
-    tree
+    jdk
+    lm_sensors
   ];
 
   home.file = { };

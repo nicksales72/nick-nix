@@ -4,7 +4,7 @@
   users.users.nick = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "docker" ]; 
-    packages = with pkgs; [ tree wget lm_sensors jdk ];
+    packages = with pkgs; [ tree wget ];
   };
 }
 
