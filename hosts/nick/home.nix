@@ -11,7 +11,6 @@
     google-chrome
     discord
     neofetch
-    ranger
     zathura
     prismlauncher
     cabal-install

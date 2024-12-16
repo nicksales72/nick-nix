@@ -37,7 +37,6 @@
       ## Launch Applications
       bindsym $mod+t exec alacritty
       bindsym $mod+b exec google-chrome-stable
-      bindsym $mod+m exec alacritty -e ranger
       bindsym $mod+d exec rofi -show drun
 
       ## Window Management
