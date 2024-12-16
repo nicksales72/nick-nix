@@ -2,7 +2,6 @@
 
 {
   home.file = {
-    # i3blocks configuration
     ".config/i3blocks/config".text = ''
       [volume]
       command=wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print "VOL: " int($2*100) "%"}'
@@ -20,7 +19,7 @@
       color=#FFFFFF
 
       [cpu_gpu_temperature]
-      command=~/.local/bin/cpu_gpu_temp.sh
+      command=~/bin/cpu_gpu_temp.sh
       interval=1
       color=#FFFFFF
 
@@ -35,23 +34,17 @@
       color=#FFFFFF
     '';
 
-    # Bash script for CPU and GPU temperature
-    ".local/bin/cpu_gpu_temp.sh".text = ''
-      #!/bin/sh
+    "bin/cpu_gpu_temp.sh" = {
+      text = ''
+        #!/bin/sh
 
-      # Adjusting the pattern to match the Tctl temperature for CPU
-      cpu_temp=$(sensors | grep "Tctl" | awk "{print substr(\$2, 2)}")
-      gpu_temp=$(sensors | grep "edge:" | awk "{print substr(\$2, 2)}")
-      
-      echo "CPU: $cpu_temp GPU: $gpu_temp"
-    '';
-  };
-
-  # Ensure the script is executable
-  home.activation = {
-    makeExecutableCpuGpuTemp = lib.hm.dag.entryAfter [ ]
-      ''
-        chmod +x ${config.home.homeDirectory}/.local/bin/cpu_gpu_temp.sh
+        # Adjusting the pattern to match the Tctl temperature for CPU
+        cpu_temp=$(sensors | grep "Tctl" | awk "{print substr(\$2, 2)}")
+        gpu_temp=$(sensors | grep "edge:" | awk "{print substr(\$2, 2)}")
+        
+        echo "CPU: $cpu_temp GPU: $gpu_temp"
       '';
+      executable = true;
+    };
   };
 }
