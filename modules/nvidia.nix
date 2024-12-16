@@ -1,6 +1,4 @@
-{ config, lib, pkgs, ... }:
-
-{
+{ config, lib, pkgs, ... }: {
   hardware.nvidia = {
     modesetting.enable = true;
     powerManagement.enable = false;

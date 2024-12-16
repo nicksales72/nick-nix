@@ -1,6 +1,4 @@
-{ config, pkgs, lib, ... }:
-
-{
+{ config, pkgs, lib, ... }: {
   home.file = {
     ".config/i3blocks/config".text = ''
       [volume]

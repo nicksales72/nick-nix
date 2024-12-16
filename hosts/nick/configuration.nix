@@ -1,15 +1,8 @@
-{ config, pkgs, ... }:
-
-{
+{ config, pkgs, ... }: {
   imports = [
     ./hardware-configuration.nix
-    ./modules/i3.nix
-    ./modules/steam.nix
-    ./modules/pipewire.nix
-    ./modules/tlp.nix
-    ./modules/nvidia.nix  
-    ./modules/user.nix    
-    ./modules/libinput.nix 
+    ../../imports/hardware.nix
+    ./user.nix    
   ];
 
   nixpkgs.config.allowUnfree = true;

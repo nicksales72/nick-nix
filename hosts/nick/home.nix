@@ -1,11 +1,6 @@
-{ config, pkgs, ... }:
-
-{
+{ config, pkgs, ... }: {
   imports = [
-    ./modules/helix.nix
-    ./modules/i3blocks.nix
-    ./modules/git.nix
-    ./modules/gtk-settings.nix
+    ../../imports/desktop.nix
   ];
 
   home.username = "nick";
