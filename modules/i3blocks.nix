@@ -17,7 +17,7 @@
       color=#FFFFFF
 
       [cpu_gpu_temperature]
-      command=~/bin/cpu_gpu_temp.sh
+      command=~/bin/cpu_gpu_temp.nu
       interval=1
       color=#FFFFFF
 
@@ -32,15 +32,37 @@
       color=#FFFFFF
     '';
 
-    "bin/cpu_gpu_temp.sh" = {
+    "bin/cpu_gpu_temp.nu" = {
       text = ''
-        #!/bin/sh
+        #!/usr/bin/env nu
 
-        # Adjusting the pattern to match the Tctl temperature for CPU
-        cpu_temp=$(sensors | grep "Tctl" | awk "{print substr(\$2, 2)}")
-        gpu_temp=$(sensors | grep "edge:" | awk "{print substr(\$2, 2)}")
-        
-        echo "CPU: $cpu_temp GPU: $gpu_temp"
+        def main [] {
+            let cpu_temp = (
+                ^sensors 
+                | grep "Tctl" 
+                | str trim 
+                | split row ":" 
+                | get 1 
+                | split row "(" 
+                | get 0 
+                | str trim
+                | str replace --all "+" ""
+            )
+
+            let gpu_temp = (
+                ^sensors 
+                | grep "edge:" 
+                | str trim 
+                | split row ":" 
+                | get 1 
+                | split row "(" 
+                | get 0 
+                | str trim
+                | str replace --all "+" ""
+            )
+
+            print $"CPU: ($cpu_temp) GPU: ($gpu_temp)"
+        }
       '';
       executable = true;
     };
