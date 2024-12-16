@@ -6,6 +6,7 @@
     ../modules/gtk-settings.nix
     ../modules/alacritty.nix
     ../modules/nushell.nix
+    ../modules/tmux.nix
   ];
 }
 
