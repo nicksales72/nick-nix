@@ -1,6 +1,6 @@
 { config, pkgs, ... }: {
   imports = [
-    ../../imports/desktop.nix
+    ../../imports/user-modules.nix
   ];
 
   home.username = "nick";
