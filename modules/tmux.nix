@@ -37,8 +37,7 @@
       set -g status-right "#(whoami) | #(date +'%Y-%m-%d %H:%M:%S')"
 
       # Latency
-      set-option -sg escape-time 0
-      set-option -ga terminal-overrides ",xterm*:Tc"
+      set -sg escape-time 0
     '';
   };
 }
