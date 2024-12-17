@@ -36,7 +36,9 @@
       # Customize status bar
       set -g status-right "#(whoami) | #(date +'%Y-%m-%d %H:%M:%S')"
 
-      set -sg escape-time 0
+      # Latency
+      set-option -sg escape-time 0
+      set-option -ga terminal-overrides ",xterm*:Tc"
     '';
   };
 }
