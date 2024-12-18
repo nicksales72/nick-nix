@@ -7,7 +7,6 @@
       editor = {
         line-number = "relative";
         mouse = false;
-        file-picker = false;
         cursor-shape = {
           insert = "bar";
           normal = "block";
