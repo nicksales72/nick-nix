@@ -17,6 +17,7 @@
     ghc
     jdk
     lm_sensors
+    dconf
   ];
 
   home.file = { };

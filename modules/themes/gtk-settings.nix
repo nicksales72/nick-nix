@@ -1,9 +1,9 @@
 { config, lib, pkgs, ... }: {
-  home.file = {
-    ".config/gtk-3.0/settings.ini".text = ''
-      [Settings]
-      gtk-application-prefer-dark-theme = 1
-    '';
+  gtk = {
+    enable = true;
+    theme = {
+      name = "Adwaita-dark";
+      package = pkgs.gnome-themes-extra;
+    };
   };
 }
-
