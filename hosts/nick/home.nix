@@ -9,6 +9,7 @@
 
   home.packages = with pkgs; [
     google-chrome
+    firefox
     discord
     neofetch
     zathura
