@@ -3,7 +3,7 @@
     enable = true;
     defaultEditor = true;
     settings = {        
-      theme = "ferra";
+      theme = "default";
       editor = {
         line-number = "relative";
         mouse = false;
