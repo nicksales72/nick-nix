@@ -18,6 +18,7 @@
     jdk
     lm_sensors
     dconf
+    acpi
   ];
 
   home.file = { };
