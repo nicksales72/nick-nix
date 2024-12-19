@@ -19,6 +19,7 @@
     lm_sensors
     dconf
     acpi
+    marksman
   ];
 
   home.file = { };
