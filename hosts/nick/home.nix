@@ -11,7 +11,6 @@
     firefox
     discord
     neofetch
-    obsidian
     zathura
     prismlauncher
     cabal-install
