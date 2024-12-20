@@ -9,7 +9,7 @@
 
   home.packages = with pkgs; [
     nodejs
-    obsidian
+    haskell-language-server
     firefox
     discord
     neofetch
