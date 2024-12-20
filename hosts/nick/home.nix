@@ -10,6 +10,7 @@
   home.packages = with pkgs; [
     nodejs
     haskell-language-server
+    ltex-ls
     firefox
     discord
     neofetch

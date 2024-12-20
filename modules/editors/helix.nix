@@ -5,7 +5,6 @@
     settings = {        
       theme = "poimandres";
       editor = {
-        soft-wrap.enable = true;
         line-number = "relative";
         mouse = false;
         cursor-shape = {
@@ -14,6 +13,13 @@
           select = "underline";
         };
       };
+    };
+    languages = {
+      language = [{
+        name = "markdown";
+        soft-wrap.enable = true;
+        soft-wrap.wrap-indicator = "";
+      }];
     };
   };
 }
