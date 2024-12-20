@@ -3,7 +3,7 @@
     enable = true;
     defaultEditor = true;
     settings = {        
-      theme = "ferra";
+      theme = "poimandres";
       editor = {
         soft-wrap.enable = true;
         line-number = "relative";
