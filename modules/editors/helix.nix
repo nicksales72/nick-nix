@@ -18,6 +18,7 @@
       language = [{
         name = "markdown";
         language-server.command = "/home/nick/.nix-profile/bin/ltex-ls";
+        config.ltex.language = "en-US";
         soft-wrap.enable = true;
         soft-wrap.wrap-indicator = "";
       }];
