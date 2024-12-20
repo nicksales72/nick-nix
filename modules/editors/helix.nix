@@ -3,8 +3,9 @@
     enable = true;
     defaultEditor = true;
     settings = {        
-      theme = "default";
+      theme = "ferra";
       editor = {
+        soft-wrap = true;
         line-number = "relative";
         mouse = false;
         cursor-shape = {
