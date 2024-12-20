@@ -5,7 +5,7 @@
     settings = {        
       theme = "ferra";
       editor = {
-        soft-wrap = true;
+        soft-wrap.enable = true;
         line-number = "relative";
         mouse = false;
         cursor-shape = {
