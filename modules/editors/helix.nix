@@ -17,7 +17,6 @@
     languages = {
       language = [{
         name = "markdown";
-        language-servers = ["/home/nick/.nix-profile/bin/ltex-ls"];
         soft-wrap.enable = true;
         soft-wrap.wrap-indicator = "";
       }];
