@@ -35,7 +35,7 @@
       bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl 25%-
 
       ## Launch Applications
-      bindsym $mod+t exec alacritty
+      bindsym $mod+t exec wezterm
       bindsym $mod+b exec firefox
       bindsym $mod+d exec rofi -show drun
 
