@@ -8,8 +8,6 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
-    wezterm
-    alacritty
     nodejs
     haskell-language-server
     firefox
