@@ -3,7 +3,7 @@
     enable = true;
     defaultEditor = true;
     settings = {        
-      theme = "poimandres";
+      theme = "varua";
       editor = {
         line-number = "relative";
         mouse = false;
