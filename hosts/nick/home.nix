@@ -13,7 +13,6 @@
     firefox
     discord
     neofetch
-    zathura
     prismlauncher
     cabal-install
     ghc
