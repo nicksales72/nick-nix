@@ -31,8 +31,8 @@
       bindsym XF86AudioMicMute exec --no-startup-id wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && $refresh_i3status
 
       ## Brightness Controls
-      bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl 25%+
-      bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl 25%-
+      bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 25%+
+      bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 25%-
 
       ## Launch Applications
       bindsym $mod+t exec wezterm
