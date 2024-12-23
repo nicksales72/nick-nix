@@ -8,13 +8,13 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
+    zathura
     nodejs
     haskell-language-server
     firefox
     discord
     neofetch
     prismlauncher
-    cabal-install
     ghc
     jdk
     lm_sensors
