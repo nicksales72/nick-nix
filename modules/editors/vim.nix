@@ -16,6 +16,7 @@
       set relativenumber
       set hlsearch
       set ruler
+      autocmd FileType markdown setlocal spell spelllang=en_us
     '';
   };
 }
