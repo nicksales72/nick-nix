@@ -1,17 +1,20 @@
-{ confi, pkgs, lib, ... }: {
+{ config, pkgs, lib, ... }: {
   programs.vim = {
     enable = true;
     defaultEditor = true;
     extraConfig = ''
       syntax on
+      colorscheme habamax
+      highlight Comment ctermfg=green  
       set tabstop=2
       set shiftwidth=2
+      set smartindent 
+      set autoindent
       set expandtab
       set ai
       set relativenumber
       set hlsearch
       set ruler
-      highlight Comment ctermfg=green  
     '';
   };
 }
