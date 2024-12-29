@@ -1,4 +1,8 @@
 { config, pkgs, lib, ... }: {
+  home.packages = with pkgs; [
+    marksman
+  ];
+  
   programs.helix = {
     enable = true;
     defaultEditor = true;
