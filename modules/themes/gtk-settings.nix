@@ -1,17 +1,16 @@
 { config, lib, pkgs, ... }: {
-  home.packages = with pkgs; [
-    dconf
-  ];
-
   gtk = {
     enable = true;
+    # gtk3.extraCss = pkgs.gnome-themes-extra.adwaitaGtkCss;
+    # gtk4.extraCss = pkgs.gnome-themes-extra.adwaitaGtkCss;
     theme = {
       name = "Adwaita-dark";
       package = pkgs.gnome-themes-extra;
     };
   };
 
-  home.sessionVariables = {
-    GTK_THEME = "Adwaita-dark"; 
-  };
+  home.packages = with pkgs; [
+    gnome-themes-extra
+    dconf
+  ];
 }
