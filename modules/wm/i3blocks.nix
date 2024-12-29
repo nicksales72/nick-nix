@@ -1,10 +1,4 @@
 { config, pkgs, lib, ... }: {
-  home.packages = with pkgs; [
-    acpi
-    lm_sensors
-  ];
-
-
   home.file = {
     ".config/i3blocks/config".text = ''
       [volume]
@@ -73,4 +67,9 @@
       executable = true;
     };
   };
+
+  home.packages = with pkgs; [
+    acpi
+    lm_sensors
+  ];
 }
