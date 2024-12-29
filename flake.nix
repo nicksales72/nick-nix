@@ -8,26 +8,23 @@
     ghostty.url = "github:clo4/ghostty-hm-module";
   };
 
-  outputs = { self, nixpkgs, home-manager, ghostty, ... }:
-    let 
-      lib = nixpkgs.lib;
-      system = "x86_64-linux";
-      pkgs = import nixpkgs {
-        inherit system;
-        config.allowUnfree = true;
-      };
-    in {
+  outputs = { self, nixpkgs, home-manager, ghostty, ... }: {
     nixosConfigurations = {
-      nixos = lib.nixosSystem {
-        inherit system;
+      nixos = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
         modules = [ ./hosts/nick/configuration.nix ];
       };
     };
+
     homeConfigurations = {
       nick = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        modules = [ ./hosts/nick/home.nix 
-                    ghostty.homeModules.default
+        pkgs = import nixpkgs {
+          system = "x86_64-linux";
+          config.allowUnfree = true;
+        };
+        modules = [
+          ./hosts/nick/home.nix
+          ghostty.homeModules.default
         ];
       };
     };
