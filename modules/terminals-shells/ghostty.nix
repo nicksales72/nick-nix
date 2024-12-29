@@ -1,5 +1,5 @@
 { pkgs, config, ... }: {
-  programs.wezterm = {
+  programs.ghostty = {
     enable = true;
   };
 }

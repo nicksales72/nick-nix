@@ -5,9 +5,10 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    ghostty.url = "github:clo4/ghostty-hm-module";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }:
+  outputs = { self, nixpkgs, home-manager, ghostty, ... }:
     let 
       lib = nixpkgs.lib;
       system = "x86_64-linux";
@@ -25,7 +26,9 @@
     homeConfigurations = {
       nick = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        modules = [ ./hosts/nick/home.nix ];
+        modules = [ ./hosts/nick/home.nix 
+                    ghostty.homeModules.default
+        ];
       };
     };
   };
