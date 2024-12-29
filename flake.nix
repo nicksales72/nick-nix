@@ -5,9 +5,10 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    ghostty.url = "github:ghostty-org/ghostty";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }:
+  outputs = { self, nixpkgs, home-manager, ghostty, ... }:
     let 
       lib = nixpkgs.lib;
       system = "x86_64-linux";
@@ -16,17 +17,25 @@
         config.allowUnfree = true;
       };
     in {
-    nixosConfigurations = {
-      nixos = lib.nixosSystem {
-        inherit system;
-        modules = [ ./hosts/nick/configuration.nix ];
+      nixosConfigurations = {
+        nixos = lib.nixosSystem {
+          inherit system;
+          modules = [ ./hosts/nick/configuration.nix ];
+        };
+      };
+
+      homeConfigurations = {
+        nick = home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          modules = [
+            ./hosts/nick/home.nix
+            {
+              home.packages = [
+                ghostty.packages.${system}.default
+              ];
+            }
+          ];
+        };
       };
     };
-    homeConfigurations = {
-      nick = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-        modules = [ ./hosts/nick/home.nix ];
-      };
-    };
-  };
 }

@@ -9,8 +9,6 @@
 
   home.packages = with pkgs; [
     texlive.combined.scheme-full
-    obsidian
-    zathura
     nodejs
     haskell-language-server
     firefox
