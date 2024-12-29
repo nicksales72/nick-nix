@@ -15,6 +15,7 @@
     discord
     neofetch
     prismlauncher
+    cabal-install
     ghc
     jdk
   ];
