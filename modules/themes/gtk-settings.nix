@@ -1,9 +1,9 @@
 { config, lib, pkgs, ... }: {
   gtk = {
     enable = true;
-    iconTheme = {
-      name = "SolArc-Dark";
-      package = pkgs.solarc-gtk-theme;
+    theme = {
+      name = "Adwaita-dark";
+      package = pkgs.gnome-themes-extra;
     };
   };
 }
