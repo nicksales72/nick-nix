@@ -1,9 +1,15 @@
 { config, lib, pkgs, ... }: {
-  gtk = {
-    enable = true;
-    theme = {
-      name = "Adwaita-dark";
-      package = pkgs.gnome-themes-extra;
-    };
-  };
+  home.packages = with pkgs; [
+    gnome-themes-extra
+  ];
+
+  xdg.configFile."gtk-3.0/settings.ini".text = ''
+    [Settings]
+    gtk-theme-name = Adwaita-dark
+  '';
+
+  xdg.configFile."gtk-4.0/settings.ini".text = ''
+    [Settings]
+    gtk-theme-name = Adwaita-dark
+  '';
 }
