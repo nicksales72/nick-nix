@@ -9,7 +9,6 @@
 
   home.packages = with pkgs; [
     texlive.combined.scheme-full
-    tor
     nodejs
     haskell-language-server
     firefox
