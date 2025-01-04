@@ -18,6 +18,8 @@
     cabal-install
     ghc
     jdk
+    zip
+    unzip
   ];
 
   home.file = { };
