@@ -8,7 +8,7 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
-    mnemosyne
+    obsidian
     texlive.combined.scheme-full
     nodejs
     haskell-language-server
