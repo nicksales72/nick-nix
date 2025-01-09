@@ -7,7 +7,7 @@
     enable = true;
     defaultEditor = true;
     settings = {        
-      theme = "rasmus";
+      theme = "kanagawa-dragon";
       editor = {
         line-number = "relative";
         mouse = false;
