@@ -5,7 +5,7 @@
     plugins = with pkgs.vimPlugins; [ vimtex ultisnips ];
     extraConfig = ''
       syntax on
-      colorscheme quiet
+      colorscheme sorbet
       set background=dark
       set tabstop=2
       set shiftwidth=2
