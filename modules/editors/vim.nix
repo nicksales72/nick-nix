@@ -6,7 +6,7 @@
     extraConfig = ''
       syntax on
       colorscheme quiet
-      highlight Comment ctermfg=green  
+      set background=dark
       set tabstop=2
       set shiftwidth=2
       set smartindent 
