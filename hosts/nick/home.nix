@@ -8,6 +8,7 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
+    mnemosyne 
     obsidian
     zathura
     texlive.combined.scheme-full
