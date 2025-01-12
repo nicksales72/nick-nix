@@ -5,7 +5,7 @@
     plugins = with pkgs.vimPlugins; [ vimtex ultisnips ];
     extraConfig = ''
       syntax on
-      colorscheme habamax
+      colorscheme quiet
       highlight Comment ctermfg=green  
       set tabstop=2
       set shiftwidth=2
