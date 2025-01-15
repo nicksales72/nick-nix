@@ -17,6 +17,11 @@
       set hlsearch
       set ruler
       autocmd FileType markdown setlocal spell spelllang=en_us
+      inoremap ( ()<Left> 
+      inoremap { {}<Left>
+      inoremap [ []<Left>
+      inoremap " ""<Left>
+      inoremap \' \'\'<Left>
     '';
   };
 }
