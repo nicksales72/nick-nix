@@ -1,6 +1,6 @@
 { lib, ... }: {
   imports = [
-    ../modules/editors/vim.nix
+    ../modules/editors/helix.nix
     ../modules/wm/i3blocks.nix
     ../modules/tools/git.nix
     ../modules/themes/gtk-settings.nix
