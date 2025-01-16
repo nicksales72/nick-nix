@@ -17,30 +17,19 @@
           select = "underline";
         };
       };
-      languages = [
-        {
-          name = "latex";
-          scope = "source.tex";
-          injection-regex = "tex";
-          file-types = ["tex"];
-          roots = [];
-          comment-token = "%";
-          language-server = {
-            command = "texlab";
-          };
-          config = {
-            texlab = {
-              build = {
-                onSave = true;
-              };
-            };
-          };
-          indent = {
-            tab-width = 4;
-            unit = "\t";
-          };
-        }
-      ];
     };
   };
+
+  home.file.".config/helix/languages.toml".text = ''
+    [[language]]
+    name = "latex"
+    scope = "source.tex"
+    injection-regex = "tex"
+    file-types = ["tex"]
+    roots = []
+    comment-token = "%"
+    language-server = { command = "texlab" }
+    config = { texlab = { build = { onSave = true } } }
+    indent = { tab-width = 4, unit = "\t" }
+'';
 }
