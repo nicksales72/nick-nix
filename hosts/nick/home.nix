@@ -9,9 +9,9 @@
 
   home.packages = with pkgs; [
     mnemosyne 
-    obsidian
     zathura
     texlive.combined.scheme-full
+    texlab
     nodejs
     haskell-language-server
     firefox
