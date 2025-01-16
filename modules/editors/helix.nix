@@ -25,15 +25,15 @@
     [[language]]
     name = "latex"
 
-    [language.config.texlab.build]
+    [language-server.config.texlab.build]
     onSave = true
     forwardSearchAfter = true
 
-    [language.config.texlab.forwardSearch]
+    [language-server.config.texlab.forwardSearch]
     executable = "zathura"
     args = [ "--synctex-forward", "%l:1:%f", "%p" ]
 
-    [language.config.texlab.chktex]
+    [language-server.config.texlab.chktex]
     onEdit = true
 '';
 }
