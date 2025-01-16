@@ -20,6 +20,7 @@
     cabal-install
     ghc
     jdk
+    R
     zip
     unzip
   ];
