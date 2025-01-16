@@ -24,16 +24,31 @@
   home.file.".config/helix/languages.toml".text = ''
     [[language]]
     name = "latex"
+    language-servers = [ "texlab" ]
 
-    [language-server.config.texlab.build]
-    onSave = true
-    forwardSearchAfter = true
+    [language-server.texlab]
+    command = "texlab"
 
-    [language-server.config.texlab.forwardSearch]
-    executable = "zathura"
-    args = [ "--synctex-forward", "%l:1:%f", "%p" ]
+    [language-server.texlab.config]
+    auxDirectory = "output"
 
-    [language-server.config.texlab.chktex]
+    [language-server.texlab.config.chktex]
+    onOpenAndSave = true
     onEdit = true
+
+    [language-server.texlab.config.build]
+    forwardSearchAfter = false
+    onSave = false
+    executable = "tectonic"
+    args = [
+    	"-X",
+    	"compile",
+    	"%f",
+    	"--synctex",
+    	"--keep-logs",
+    	"--keep-intermediates",
+    	"--outdir=output",
+    	"-Zshell-escape",
+    ]
 '';
 }
