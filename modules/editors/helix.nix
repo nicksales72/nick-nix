@@ -38,7 +38,7 @@
 
     [language-server.texlab.config.build]
     forwardSearchAfter = false
-    onSave = false
+    onSave = true
     executable = "tectonic"
     args = [
     	"-X",
