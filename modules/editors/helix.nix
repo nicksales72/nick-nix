@@ -1,12 +1,12 @@
 { config, pkgs, lib, ... }: {
   home.packages = with pkgs; [
-    marksman
+    texlab
   ];
-  
+
   programs.helix = {
     enable = true;
     defaultEditor = true;
-    settings = {        
+    settings = {
       theme = "varua";
       editor = {
         line-number = "relative";
@@ -17,13 +17,30 @@
           select = "underline";
         };
       };
-    };
-    languages = {
-      language = [{
-        name = "markdown";
-        soft-wrap.enable = true;
-        soft-wrap.wrap-indicator = "";
-      }];
+      languages = [
+        {
+          name = "latex";
+          scope = "source.tex";
+          injection-regex = "tex";
+          file-types = ["tex"];
+          roots = [];
+          comment-token = "%";
+          language-server = {
+            command = "texlab";
+          };
+          config = {
+            texlab = {
+              build = {
+                onSave = true;
+              };
+            };
+          };
+          indent = {
+            tab-width = 4;
+            unit = "\t";
+          };
+        }
+      ];
     };
   };
 }
