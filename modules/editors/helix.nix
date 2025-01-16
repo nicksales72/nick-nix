@@ -25,34 +25,15 @@
     [[language]]
     name = "latex"
 
-    [language.config.texlab]
-    auxDirectory = "build"
-
-    [language-server.texlab.config.texlab.chktex]
-    onOpenAndSave = true
-    onEdit = true
-
-    [language-server.texlab.config.texlab.forwardSearch]
-    executable = "zathura"
-    args = [ "--synctex-forward", "%l:%c:%f", "%p" ]
-
-    [language-server.texlab.config.texlab.build]
-    auxDirectory = "build"
-    logDirectory = "build"
-    pdfDirectory = "build"
-
-    forwardSearchAfter = true
+    [language.config.texlab.build]
     onSave = true
+    forwardSearchAfter = true
 
-    executable = "tectonic"
-    args = [
-     "-X",
-     "compile",
-     "--synctex",
-     "--keep-logs",
-     "--keep-intermediates",
-     "--outdir=build",
-     "%f",
-     ]
+    [language.config.texlab.forwardSearch]
+    executable = "zathura"
+    args = [ "--synctex-forward", "%l:1:%f", "%p" ]
+
+    [language.config.texlab.chktex]
+    onEdit = true
 '';
 }
