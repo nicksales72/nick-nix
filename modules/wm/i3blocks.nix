@@ -17,7 +17,7 @@
       color=#FFFFFF
 
       [cpu_gpu_temperature]
-      command=~/bin/cpu_gpu_temp.sh
+      command=bash ~/bin/cpu_gpu_temp.sh
       interval=1
       color=#FFFFFF
 
