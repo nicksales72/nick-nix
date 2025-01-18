@@ -2,7 +2,7 @@
   programs.vim = {
     enable = true;
     defaultEditor = true;
-    plugins = with pkgs.vimPlugins; [ vimtex ultisnips ];
+    plugins = with pkgs.vimPlugins; [ vimtex ultisnips markdown-preview-nvim];
     extraConfig = ''
       syntax on
       colorscheme quiet
