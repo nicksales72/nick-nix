@@ -5,7 +5,7 @@
     plugins = with pkgs.vimPlugins; [ vimtex ultisnips markdown-preview-nvim];
     extraConfig = ''
       syntax on
-      colorscheme quiet
+      colorscheme phoenix
       set background=dark
       set tabstop=2
       set shiftwidth=2
