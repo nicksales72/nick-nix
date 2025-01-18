@@ -30,9 +30,6 @@
       bind k select-pane -U
       bind l select-pane -R
 
-      # Set a default shell (e.g., Nushell)
-      set-option -g default-shell "${pkgs.nushell}/bin/nu"
-
       # Customize status bar
       set -g status-right "#(whoami) | #(date +'%Y-%m-%d %H:%M:%S')"
 
