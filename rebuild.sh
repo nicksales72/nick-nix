@@ -6,7 +6,10 @@ DOTFILES_PATH="/home/nick/.dotfiles/nixos"
 SYNC_PATH="/home/nick/Programming/nick-nix"
 
 if home-manager switch --flake "$DOTFILES_PATH"; then
-    if sudo nixos-rebuild switch --flake "$DOTFILES_PATH"; then
+    if sudo nixos-rebuild switch --flake "$DOTFILES_PATH"; then 
+        echo "Running nix flake update in $DOTFILES_PATH..."
+        nix flake update --flake "$DOTFILES_PATH"
+        
         cd "$SYNC_PATH"
         sudo cp -rf "$DOTFILES_PATH"/* .
 
