@@ -17,7 +17,7 @@
       color=#FFFFFF
 
       [cpu_gpu_temperature]
-      command=bash ~/bin/cpu_gpu_temp.sh
+      command=./~/bin/cpu_gpu_temp.sh
       interval=1
       color=#FFFFFF
 
@@ -34,7 +34,7 @@
 
     "bin/cpu_gpu_temp.sh" = {
       text = ''
-        #!/bin/bash
+        #!/usr/bin/env bash
 
         set -euo pipefail
 
