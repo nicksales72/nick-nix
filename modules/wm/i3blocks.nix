@@ -38,9 +38,9 @@
 
         set -euo pipefail
 
-        cpu_temp=$(sensors | grep "Tctl" | awk -F':' '{print $2}' | awk -F'(' '{print $1}' | tr -d '+' | xargs)
+        cpu_temp=$(sensors | grep "Tctl" | awk -F':' '{print $2}' | awk -F'(' '{print $1}' | tr -d '+' | sed 's/^ *//;s/ *$//')
 
-        gpu_temp=$(sensors | grep "edge:" | awk -F':' '{print $2}' | awk -F'(' '{print $1}' | tr -d '+' | xargs)
+        gpu_temp=$(sensors | grep "edge:" | awk -F':' '{print $2}' | awk -F'(' '{print $1}' | tr -d '+' | sed 's/^ *//;s/ *$//')
 
         echo "CPU: $cpu_temp GPU: $gpu_temp"
       '';
