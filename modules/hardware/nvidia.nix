@@ -14,11 +14,13 @@
     };
   };
 
-  services.xserver = {
-    enable = true;
-    videoDrivers = ["nvidia"];
-    desktopManager.xterm.enable = false;
+  services = {
     displayManager.defaultSession = "none+i3";
+    xserver = {
+      enable = true;
+      videoDrivers = ["nvidia"];
+      desktopManager.xterm.enable = false;
+    };
   };
 
   environment.systemPackages = with pkgs; [
