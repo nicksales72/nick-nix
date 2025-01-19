@@ -9,15 +9,15 @@
 
   home.packages = with pkgs; [
     mnemosyne 
-    zathura
-    texlive.combined.scheme-full
-    nodejs
-    haskell-language-server
+    tdf
     firefox
     discord
     neofetch
     prismlauncher
     cabal-install
+    texlive.combined.scheme-full
+    nodejs
+    haskell-language-server
     ghc
     jdk
     R
