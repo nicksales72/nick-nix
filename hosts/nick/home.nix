@@ -9,7 +9,7 @@
 
   home.packages = with pkgs; [
     mnemosyne 
-    tdf
+    sioyek
     firefox
     discord
     neofetch
