@@ -7,7 +7,7 @@
     enable = true;
     defaultEditor = true;
     settings = {        
-      theme = "varua";
+      theme = "carbonfox";
       editor = {
         line-number = "relative";
         mouse = false;
