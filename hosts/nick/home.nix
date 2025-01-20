@@ -8,21 +8,16 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
-    mnemosyne 
+    mnemosyne
+    obsidian
     sioyek
     firefox
     discord
     neofetch
     prismlauncher
     cabal-install
-    texlive.combined.scheme-full
-    nodejs
     haskell-language-server
-    ghc
-    jdk
-    R
-    zip
-    unzip
+    texlive.combined.scheme-full
   ];
 
   home.file = { };
