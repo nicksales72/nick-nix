@@ -1,1 +1,8 @@
-hardware-configuration.nix
+*
+./hosts/nick/hardware-configuration.nix
+
+!*/
+!*.nix
+!rebuild.sh
+!flake.lock
+!README.md

@@ -1,8 +1,4 @@
-{ config, pkgs, lib, ... }: {
-  home.packages = with pkgs; [
-    marksman
-  ];
-  
+{ config, pkgs, lib, ... }: {  
   programs.helix = {
     enable = true;
     defaultEditor = true;
@@ -17,13 +13,6 @@
           select = "underline";
         };
       };
-    };
-    languages = {
-      language = [{
-        name = "markdown";
-        soft-wrap.enable = true;
-        soft-wrap.wrap-indicator = "";
-      }];
     };
   };
 }
