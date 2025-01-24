@@ -9,7 +9,6 @@
 
   home.packages = with pkgs; [
     mnemosyne
-    obsidian
     sioyek
     firefox
     discord
