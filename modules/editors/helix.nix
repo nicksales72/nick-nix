@@ -3,7 +3,7 @@
     enable = true;
     defaultEditor = true;
     settings = {        
-      theme = "carbonfox";
+      theme = "gruber-darker";
       editor = {
         line-number = "relative";
         mouse = false;
@@ -16,3 +16,4 @@
     };
   };
 }
+
