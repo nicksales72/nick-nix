@@ -5,10 +5,9 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     home-manager.url = "github:nix-community/home-manager/release-24.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    ghostty.url = "github:ghostty-org/ghostty";
   };
 
-  outputs = { self, nixpkgs, home-manager, ghostty, ... }:
+  outputs = { self, nixpkgs, home-manager, ... }:
     let 
       lib = nixpkgs.lib;
       system = "x86_64-linux";
@@ -29,11 +28,6 @@
           inherit pkgs;
           modules = [
             ./hosts/nick/home.nix
-            {
-              home.packages = [
-                ghostty.packages.${system}.default
-              ];
-            }
           ];
         };
       };
