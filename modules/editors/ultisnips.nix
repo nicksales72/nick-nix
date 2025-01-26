@@ -36,7 +36,7 @@
     endsnippet
 
     snippet // "Fraction" iA
-    \\\frac{$1}{$2}$0
+    \\frac{$1}{$2}$0
     endsnippet
 
     snippet func "Function" iA
@@ -44,7 +44,7 @@
     endsnippet
 
     snippet mbb "Mathbb" iA
-    \\\mathbb{$1}$0
+    \\mathbb{$1}$0
     endsnippet
   '';
 }
