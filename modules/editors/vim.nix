@@ -19,7 +19,7 @@
       let g:UltiSnipsExpandTrigger = '<tab>'
       let g:UltiSnipsJumpForwardTrigger = '<tab>'
       let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
-      let g:UltiSnipsSnippetDirectories = ['~/.vim/snippets']
+      let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips']
       autocmd FileType tex inoremap $ $$<Left>
       inoremap ( ()<Left>
       inoremap { {}<Left>
