@@ -9,6 +9,7 @@
 
   home.packages = with pkgs; [
     mnemosyne
+    obsidian
     firefox
     discord
     neofetch
