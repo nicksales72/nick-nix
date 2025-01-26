@@ -9,7 +9,6 @@
 
   home.packages = with pkgs; [
     mnemosyne
-    tectonic
     obsidian
     discord
     neofetch
