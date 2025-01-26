@@ -16,6 +16,10 @@
       set relativenumber
       set hlsearch
       set ruler
+      let g:UltiSnipsExpandTrigger = '<tab>'
+      let g:UltiSnipsJumpForwardTrigger = '<tab>'
+      let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+      autocmd FileType tex inoremap $ $$<Left>
       inoremap ( ()<Left>
       inoremap { {}<Left>
       inoremap [ []<Left>
