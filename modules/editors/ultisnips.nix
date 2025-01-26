@@ -1,5 +1,5 @@
-{ config, pkgs, ... }: {
-  home.file."~/.vim/UltiSnips/tex.snippets".text = ''
+{ config, pkgs, lib, ... }: {
+  home.file.".vim/UltiSnips/tex.snippets".text = ''
     snippet template "basic template" b
     \\documentclass[11pt, a4paper]{article}
 
