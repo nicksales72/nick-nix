@@ -2,10 +2,10 @@
   programs.vim = {
     enable = true;
     defaultEditor = true;
-    plugins = with pkgs.vimPlugins; [ vimtex ultisnips markdown-preview-nvim gruber-darker-nvim];
+    plugins = with pkgs.vimPlugins; [ vimtex ultisnips markdown-preview-nvim ];
     extraConfig = ''
       syntax on
-      colorscheme gruber-darker
+      colorscheme GruberDarker
       set background=dark
       set tabstop=2
       set shiftwidth=2
