@@ -2,7 +2,7 @@
   programs.vim = {
     enable = true;
     defaultEditor = true;
-    plugins = with pkgs.vimPlugins; [ vimtex ultisnips markdown-preview-nvim ];
+    plugins = with pkgs.vimPlugins; [ vimtex ultisnips ];
     extraConfig = ''
       syntax on
       colorscheme GruberDarker
