@@ -29,14 +29,22 @@
 
     endsnippet
 
-    snippet beg "begin and end" bA
+    snippet beg "Begin" bA
     \\begin{$1}
-        $0
+      $0
     \\end{$1}
     endsnippet
 
     snippet // "Fraction" iA
-    \\\\frac{$1}{$2}$0
+    \\\frac{$1}{$2}$0
+    endsnippet
+
+    snippet func "Function" iA
+    f : {$1} \rightarrow {$2}$0
+    endsnippet
+
+    snippet mbb "Mathbb" iA
+    \\\mathbb{$1}$0
     endsnippet
   '';
 }
