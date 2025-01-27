@@ -39,12 +39,16 @@
     \\frac{$1}{$2}$0
     endsnippet
 
-    snippet fright "Function" iA
+    snippet mbb "Mathbb" iA
+    \\mathbb{$1}$0
+    endsnippet
+
+    snippet func "Function" i
     f : {$1} \rightarrow {$2}$0
     endsnippet
 
-    snippet mbb "Mathbb" iA
-    \\mathbb{$1}$0
+    snippet vec "Vector" i
+    \vec{$1}$0
     endsnippet
   '';
 }
