@@ -39,7 +39,7 @@
     \\frac{$1}{$2}$0
     endsnippet
 
-    snippet func "Function" iA
+    snippet fright "Function" iA
     f : {$1} \rightarrow {$2}$0
     endsnippet
 
