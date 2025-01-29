@@ -18,6 +18,8 @@
     cabal-install
     haskell-language-server
     texlive.combined.scheme-full
+    texlab
+    tectonic
   ];
 
   home.file = { };
