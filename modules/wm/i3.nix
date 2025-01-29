@@ -36,7 +36,7 @@
 
       ## Launch Applications
       bindsym $mod+t exec wezterm
-      bindsym $mod+b exec librewolf
+      bindsym $mod+b exec firefox
       bindsym $mod+d exec rofi -show drun
 
       ## Window Management
