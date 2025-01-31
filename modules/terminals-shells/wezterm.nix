@@ -8,7 +8,7 @@
         front_end = "WebGpu",
         enable_wayland = false,
         colors = {
-          background = "000000",
+          background = "1c1c1c",
         },
       }
     '';

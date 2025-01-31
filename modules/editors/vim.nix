@@ -5,7 +5,7 @@
     plugins = with pkgs.vimPlugins; [ vimtex ultisnips ];
     extraConfig = ''
       syntax on
-      colorscheme lunaperche
+      colorscheme retrobox
       set background=dark
       set tabstop=2
       set shiftwidth=2
