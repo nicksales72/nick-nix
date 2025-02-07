@@ -13,7 +13,7 @@
     mnemosyne
     obsidian
     discord
-    neofetch
+    fastfetch
     prismlauncher
     cabal-install
     haskell-language-server
