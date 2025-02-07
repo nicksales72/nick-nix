@@ -1,8 +1,9 @@
 *
-hosts/nick/hardware-configuration.nix
 
 !*/
 !*.nix
 !rebuild.sh
 !flake.lock
 !README.md
+
+hosts/nick/hardware-configuration.nix
