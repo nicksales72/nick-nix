@@ -13,6 +13,9 @@
           select = "underline";
         };
       };      
+      keys.normal = {
+        C-t = ":sh tectonic main.tex";
+      };
     };
   };
 }

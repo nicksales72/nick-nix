@@ -1,5 +1,5 @@
 *
-**/hardware-configuration.nix
+hosts/nick/hardware-configuration.nix
 
 !*/
 !*.nix
