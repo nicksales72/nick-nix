@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: {
+{ config, pkgs, unstable, ... }: {
   imports = [
     ../../imports/user-modules.nix
   ];
