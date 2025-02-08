@@ -11,6 +11,7 @@
     tectonic
     pavucontrol
     firefox
+    google-chrome
     mnemosyne
     obsidian
     discord
