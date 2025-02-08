@@ -1,16 +1,23 @@
 { config, lib, pkgs, ... }: {
-  hardware.nvidia = {
-    modesetting.enable = true;
-    powerManagement.enable = false;
-    powerManagement.finegrained = false;
-    open = false;
-    nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.beta;
-    nvidiaPersistenced = true;
-    prime = {
-      offload.enable = true;
-      amdgpuBusId = "PCI:5:0:0";
-      nvidiaBusId = "PCI:1:0:0";
+  hardware = {
+    opengl = {
+      enable = true;
+      extraPackages = with pkgs; [ nvidia-vaapi-driver ];
+    };
+
+    nvidia = {
+      modesetting.enable = true;
+      powerManagement.enable = false;
+      powerManagement.finegrained = false;
+      open = false;
+      nvidiaSettings = true;
+      package = config.boot.kernelPackages.nvidiaPackages.beta;
+      nvidiaPersistenced = true;
+      prime = {
+        offload.enable = true;
+        amdgpuBusId = "PCI:5:0:0";
+        nvidiaBusId = "PCI:1:0:0";
+      };
     };
   };
 
@@ -18,7 +25,7 @@
     displayManager.defaultSession = "none+i3";
     xserver = {
       enable = true;
-      videoDrivers = ["nvidia"];
+      videoDrivers = [ "nvidia" ];
       desktopManager.xterm.enable = false;
     };
   };
