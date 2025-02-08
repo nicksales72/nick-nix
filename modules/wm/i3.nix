@@ -79,7 +79,7 @@
       bindsym $mod+r mode "resize"
 
       # Display and Background Settings
-      exec --no-startup-id xrandr --output HDMI-A-0 --auto --mode 1920x1080 --rate 74.97 --right eDP --primary
+      exec --no-startup-id xrandr --output HDMI-A-0 --mode 1920x1080 --rate 74.97 --same-as eDP --primary
       exec --no-startup-id xsetroot -solid "#000000"
 
       # Bar Configuration
