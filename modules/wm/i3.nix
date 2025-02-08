@@ -36,7 +36,7 @@
 
       ## Launch Applications
       bindsym $mod+t exec ghostty
-      bindsym $mod+b exec firefox
+      bindsym $mod+b exec nvidia-offload firefox
       bindsym $mod+d exec rofi -show drun
 
       ## Window Management
