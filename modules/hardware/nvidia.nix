@@ -1,6 +1,6 @@
 { config, lib, pkgs, ... }: {
   hardware = {
-    opengl = {
+    graphics = {
       enable = true;
       extraPackages = with pkgs; [ nvidia-vaapi-driver ];
     };
