@@ -14,7 +14,6 @@
     mnemosyne
     obsidian
     discord
-    fastfetch
     prismlauncher
     cabal-install
     haskell-language-server
