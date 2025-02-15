@@ -31,7 +31,7 @@
 
     snippet beg "Begin" bA
     \\begin{$1}
-      $0
+    	$0
     \\end{$1}
     endsnippet
 
@@ -49,6 +49,10 @@
 
     snippet vec "Vector" i
     \vec{$1}$0
+    endsnippet
+
+    snippet span "Span" i
+    \langle $1 \rangle$0
     endsnippet
   '';
 }
