@@ -3,7 +3,7 @@
     enable = true;
     package = unstable.ghostty;  
     settings = {
-      background = "181818";
+      background = "1c1c1c";
     };
   };
 }
