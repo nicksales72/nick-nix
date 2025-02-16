@@ -19,6 +19,7 @@
     elisa
     gwenview
     kate
+    kwallet
     plasma-browser-integration
     konsole
     oxygen
