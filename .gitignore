@@ -4,6 +4,7 @@
 !*.nix
 !rebuild.sh
 !flake.lock
+!kwin.kksr
 !README.md
 
 hosts/nick/hardware-configuration.nix
