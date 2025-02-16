@@ -15,6 +15,7 @@
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
     ark
     dolphin
+    okular
     elisa
     gwenview
     kate

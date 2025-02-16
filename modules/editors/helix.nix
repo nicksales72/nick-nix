@@ -3,7 +3,7 @@
     enable = true;
     defaultEditor = true;
     settings = {
-      theme = "varua";
+      theme = "gruvbox";
       editor = {
         line-number = "relative";
         mouse = false;
