@@ -3,7 +3,7 @@
     enable = true;
     defaultEditor = true;
     settings = {
-      theme = "gruber-darker";
+      theme = "varua";
       editor = {
         line-number = "relative";
         mouse = false;

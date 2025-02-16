@@ -1,12 +1,17 @@
 { config, pkgs, ... }: {
   services = {
-    xserver.enable = true;
     desktopManager.plasma6.enable = true;
+    xserver = {
+      enable = true;
+      videoDrivers = [ "nvidia" ];
+      desktopManager.xterm.enable = false;
+    };
     displayManager = {
       sddm.wayland.enable = true;
       defaultSession = "plasma";
     };
   };
+
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
     ark
     dolphin
