@@ -1,6 +1,7 @@
 { lib, ... }: {
   imports = [
     ../modules/editors/helix.nix
+    ../modules/tools/zathura.nix
     ../modules/tools/git.nix
     ../modules/terminals-shells/ghostty.nix
     ../modules/terminals-shells/nushell.nix
