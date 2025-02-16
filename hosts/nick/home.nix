@@ -8,9 +8,7 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
-    pavucontrol
     firefox
-    mnemosyne
     obsidian
     discord
     prismlauncher

@@ -7,4 +7,14 @@
       defaultSession = "plasma";
     };
   };
+  environment.plasma6.excludePackages = with pkgs.kdePackages; [
+    ark
+    dolphin
+    elisa
+    gwenview
+    kate
+    plasma-browser-integration
+    konsole
+    oxygen
+  ];
 }

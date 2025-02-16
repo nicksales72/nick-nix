@@ -1,7 +1,6 @@
-{ pkgs, config, unstable, ... }: {
+{ pkgs, config, ... }: {
   programs.ghostty = {
     enable = true;
-    package = unstable.ghostty;  
     settings = {
       background = "1c1c1c";
     };
