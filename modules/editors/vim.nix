@@ -2,7 +2,7 @@
   programs.vim = {
     enable = true;
     defaultEditor = true;
-    plugins = with pkgs.vimPlugins; [ vimspector vim-lsp vimtex ultisnips ];
+    plugins = with pkgs.vimPlugins; [ vimspector vim-wayland-clipboard vim-lsp vimtex ultisnips ];
     extraConfig = ''
       syntax on
       colorscheme retrobox
