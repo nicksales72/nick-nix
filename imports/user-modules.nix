@@ -1,7 +1,6 @@
 { lib, ... }: {
   imports = [
-    ../modules/editors/vim.nix
-    ../modules/editors/ultisnips.nix
+    ../modules/editors/helix.nix
     ../modules/tools/zathura.nix
     ../modules/tools/git.nix
     ../modules/terminals-shells/ghostty.nix
