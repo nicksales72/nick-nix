@@ -2,7 +2,7 @@
   programs.vim = {
     enable = true;
     defaultEditor = true;
-    plugins = with pkgs.vimPlugins; [ vimspector vim-wayland-clipboard vim-lsp vimtex ultisnips ];
+    plugins = with pkgs.vimPlugins; [ vimspector vim-lsp vimtex ultisnips ];
     extraConfig = ''
       syntax on
       colorscheme retrobox
@@ -16,6 +16,18 @@
       set relativenumber
       set hlsearch
       set ruler
+      let g:clipboard = {
+        \ 'name': 'wl-clipboard',
+        \ 'copy': {
+        \   '+': 'wl-copy',
+        \   '*': 'wl-copy',
+        \ },
+        \ 'paste': {
+        \   '+': 'wl-paste --no-newline',
+        \   '*': 'wl-paste --no-newline',
+        \ },
+        \ 'cache_enabled': 1,
+        \ }
       let g:vimtex_view_method = 'zathura'
       let g:UltiSnipsExpandTrigger = '<tab>'
       let g:UltiSnipsJumpForwardTrigger = '<tab>'
