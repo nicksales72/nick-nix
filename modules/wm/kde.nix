@@ -12,15 +12,20 @@
     };
   };
 
-  environment.plasma6.excludePackages = with pkgs.kdePackages; [
-    ark
-    dolphin
-    okular
-    elisa
-    gwenview
-    kate
-    plasma-browser-integration
-    konsole
-    oxygen
-  ];
+  environment = {
+    systemPackages = with pkgs; [
+      wl-clipboard
+    ];
+    plasma6.excludePackages = with pkgs.kdePackages; [
+      ark
+      dolphin
+      okular
+      elisa
+      gwenview
+      kate
+      plasma-browser-integration
+      konsole
+      oxygen
+    ];
+  };
 }
