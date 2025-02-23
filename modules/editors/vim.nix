@@ -2,10 +2,10 @@
   programs.vim = {
     enable = true;
     defaultEditor = true;
-    plugins = with pkgs.vimPlugins; [ everforest vimspector vim-lsp vimtex ultisnips ];
+    plugins = with pkgs.vimPlugins; [ nord-vim vimspector vim-lsp vimtex ultisnips ];
     extraConfig = ''
       syntax on
-      colorscheme retrobox
+      colorscheme nord
       set background=dark
       set tabstop=2
       set shiftwidth=2
