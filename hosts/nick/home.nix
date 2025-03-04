@@ -8,8 +8,9 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
-    tectonic
     firefox
+    pavucontrol
+    fastfetch
     obsidian
     discord
     prismlauncher

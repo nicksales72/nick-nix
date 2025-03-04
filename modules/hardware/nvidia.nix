@@ -21,6 +21,15 @@
     };
   };
 
+  services = {
+    displayManager.defaultSession = "none+i3";
+    xserver = {
+      enable = true;
+      videoDrivers = [ "nvidia" ];
+      desktopManager.xterm.enable = false;
+    };
+  };
+
   environment.systemPackages = with pkgs; [
     (pkgs.writeShellScriptBin "nvidia-offload" ''
       export __NV_PRIME_RENDER_OFFLOAD=1
