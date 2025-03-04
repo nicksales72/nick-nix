@@ -3,7 +3,7 @@
     enable = true;
     defaultEditor = true;
     settings = {
-      theme = "adwaita-dark";
+      theme = "penumbra+";
       editor = {
         line-number = "relative";
         mouse = false;

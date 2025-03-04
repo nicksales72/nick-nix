@@ -2,7 +2,7 @@
   programs.ghostty = {
     enable = true;
     settings = {
-      background = "1D1D1D";
+      background = "24272B";
       cursor-style = "block";
       cursor-style-blink = "false";
     };
