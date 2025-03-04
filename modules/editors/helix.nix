@@ -3,7 +3,7 @@
     enable = true;
     defaultEditor = true;
     settings = {
-      theme = "everforest_dark";
+      theme = "rasmus";
       editor = {
         line-number = "relative";
         mouse = false;
