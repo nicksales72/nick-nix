@@ -6,7 +6,6 @@
       theme = "penumbra+";
       editor = {
         line-number = "relative";
-        mouse = false;
         cursor-shape = {
           insert = "bar";
           normal = "block";
