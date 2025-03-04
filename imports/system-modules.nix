@@ -1,10 +1,12 @@
 { lib, ... }: {
   imports = [
+    ../modules/services/tlp.nix
     ../modules/services/pipewire.nix
+    ../modules/services/libinput.nix
     ../modules/services/nix.nix
     ../modules/hardware/nvidia.nix
     ../modules/hardware/steam.nix
     ../modules/users/users.nix
-    ../modules/wm/kde.nix
+    ../modules/wm/i3.nix
   ];
 }
