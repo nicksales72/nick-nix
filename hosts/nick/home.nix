@@ -9,6 +9,7 @@
 
   home.packages = with pkgs; [
     firefox
+    clang-tools
     tectonic
     pavucontrol
     fastfetch
