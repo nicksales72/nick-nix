@@ -5,7 +5,7 @@
     settings = {
       theme = "penumbra+";
       editor = {
-        soft-wrap = true;
+        soft-wrap = "true";
         line-number = "relative";
         cursor-shape = {
           insert = "bar";
