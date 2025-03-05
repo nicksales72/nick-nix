@@ -7,7 +7,7 @@
       color=#FFFFFF
 
       [battery]
-      command=acpi -b | awk -F', ' '{print "BAT: " $2}' | tr -d '%'
+      command=acpi -b | grep 'Battery 1' | awk -F', ' '{print "BAT: " $2}' | tr -d '%'
       interval=30
       color=#FFFFFF
 
