@@ -9,7 +9,6 @@
 
   home.packages = with pkgs; [
     clang-tools
-    pavucontrol
     obsidian
     discord
     prismlauncher
