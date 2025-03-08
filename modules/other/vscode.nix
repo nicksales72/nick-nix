@@ -4,7 +4,7 @@
     profiles.default = {
       userSettings = {
         "editor.lineNumbers" = "relative"; 
-        "vim.useSystemClipbaord" = true;
+        "vim.useSystemClipboard" = true;
         "workbench.colorTheme" = "Default Dark Modern";
       };
       extensions = with pkgs; [
