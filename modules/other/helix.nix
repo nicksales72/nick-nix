@@ -19,5 +19,8 @@
         C-t = ":sh tectonic main.tex";
       };
     };
+    extraPackages = with pkgs; [
+      tectonic
+    ];
   };
 }

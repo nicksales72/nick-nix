@@ -1,4 +1,9 @@
 { pkgs, config, ... }: {
+
+  home.packages = with pkgs; [
+    yazi
+  ];
+
   programs.ghostty = {
     enable = true;
     settings = {

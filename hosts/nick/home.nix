@@ -8,13 +8,8 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
-    yazi
-    zathura
-    firefox
     clang-tools
-    tectonic
     pavucontrol
-    fastfetch
     obsidian
     discord
     prismlauncher

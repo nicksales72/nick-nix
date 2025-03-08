@@ -9,5 +9,9 @@
     enable = true;
     powerOnBoot = true;
   };
+
+  environment.systemPackages = with pkgs; [
+    pavucontrol
+  ];
 }
 
