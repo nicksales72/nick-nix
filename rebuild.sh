@@ -2,16 +2,16 @@
 
 set -euo pipefail
 
-DOTFILES_PATH="/home/nick/.dotfiles/nixos"
-SYNC_PATH="/home/nick/Programming/nick-nix"
+NIX_PATH="/home/nick/nixos"
+SYNC_PATH="/home/nick/projects/nick-nix"
 
-if home-manager switch --flake "$DOTFILES_PATH"; then
-    if sudo nixos-rebuild switch --flake "$DOTFILES_PATH"; then 
-        echo "Running nix flake update in $DOTFILES_PATH..."
-        nix flake update --flake "$DOTFILES_PATH"
+if home-manager switch --flake "$NIX_PATH"; then
+    if sudo nixos-rebuild switch --flake "$NIX_PATH"; then 
+        echo "Running nix flake update in $NIX_PATH..."
+        nix flake update --flake "$NIX_PATH"
         
         cd "$SYNC_PATH"
-        sudo cp -rf "$DOTFILES_PATH"/* .
+        sudo cp -rf "$NIX_PATH"/* .
 
         CURRENT_DATE=$(date "+%Y-%m-%d")
         git add .
