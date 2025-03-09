@@ -1,8 +1,7 @@
 { lib, ... }: {
   imports = [
+    ../modules/other/helix.nix
     ../modules/other/i3blocks.nix
-    ../modules/other/vscode.nix
-    ../modules/other/vim.nix
     ../modules/other/ghostty.nix
     ../modules/other/tmux.nix
     ../modules/other/firefox.nix
