@@ -7,6 +7,7 @@
       jupyterlab
       pandas
       graphviz
+      pyzmq
     ]))
   ];
 }
