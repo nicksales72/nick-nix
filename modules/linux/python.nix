@@ -6,6 +6,7 @@
       matplotlib
       jupyterlab
       pandas
+      graphviz
     ]))
   ];
 }
