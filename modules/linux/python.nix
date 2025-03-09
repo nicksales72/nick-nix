@@ -1,6 +1,11 @@
 { config, lib, pkgs, ... }: {
   environment.systemPackages = with pkgs; [
-    python313
     uv
+    (python313.withPackages (ps: with ps; [
+      numpy
+      matplotlib
+      jupyterlab
+      pandas
+    ]))
   ];
 }
