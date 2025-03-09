@@ -10,6 +10,7 @@
       pyzmq
       pip
       notebook
+      torch
     ]))
   ];
 }
