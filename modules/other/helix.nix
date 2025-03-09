@@ -21,6 +21,7 @@
     };
     extraPackages = with pkgs; [
       tectonic
+      zathura
       yazi
     ];
   };
