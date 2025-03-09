@@ -8,6 +8,8 @@
       pandas
       graphviz
       pyzmq
+      pip
+      notebook
     ]))
   ];
 }
