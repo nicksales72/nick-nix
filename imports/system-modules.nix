@@ -1,13 +1,13 @@
 { lib, ... }: {
   imports = [
-    ../modules/linux/tlp.nix
-    ../modules/linux/pipewire.nix
-    ../modules/linux/libinput.nix
-    ../modules/linux/nix.nix
-    ../modules/linux/nvidia.nix
-    ../modules/linux/python.nix
-    ../modules/linux/i3.nix
-    ../modules/other/steam.nix
-    ../modules/other/users.nix
+    ../modules/tlp.nix
+    ../modules/pipewire.nix
+    ../modules/libinput.nix
+    ../modules/nix.nix
+    ../modules/nvidia.nix
+    ../modules/python.nix
+    ../modules/i3.nix
+    ../modules/steam.nix
+    ../modules/users.nix
   ];
 }
