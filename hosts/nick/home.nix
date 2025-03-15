@@ -8,6 +8,7 @@
   home.stateVersion = "24.11";
 
   home.packages = with pkgs; [
+    ventoy-full-gtk
     chromium
     clang-tools
     discord
