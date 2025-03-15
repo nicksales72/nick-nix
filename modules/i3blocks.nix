@@ -17,7 +17,7 @@
       color=#FFFFFF
 
       [cpu_gpu_temperature]
-      command=~/bin/cpu_gpu_temp.sh
+      command=~/bin/cpu_gpu_temp.nu
       interval=1
       color=#FFFFFF
 
@@ -32,17 +32,37 @@
       color=#FFFFFF
     '';
 
-    "bin/cpu_gpu_temp.sh" = {
+    "bin/cpu_gpu_temp.nu" = {
       text = ''
-        #!/usr/bin/env bash
+        #!/usr/bin/env nu
 
-        set -euo pipefail
+        def main [] {
+            let cpu_temp = (
+                ^sensors 
+                | grep "Tctl" 
+                | str trim 
+                | split row ":" 
+                | get 1 
+                | split row "(" 
+                | get 0 
+                | str trim
+                | str replace --all "+" ""
+            )
 
-        cpu_temp=$(sensors | grep "Tctl" | awk -F':' '{print $2}' | awk -F'(' '{print $1}' | tr -d '+' | sed 's/^ *//;s/ *$//')
+            let gpu_temp = (
+                ^sensors 
+                | grep "edge:" 
+                | str trim 
+                | split row ":" 
+                | get 1 
+                | split row "(" 
+                | get 0 
+                | str trim
+                | str replace --all "+" ""
+            )
 
-        gpu_temp=$(sensors | grep "edge:" | awk -F':' '{print $2}' | awk -F'(' '{print $1}' | tr -d '+' | sed 's/^ *//;s/ *$//')
-
-        echo "CPU: $cpu_temp GPU: $gpu_temp"
+            print $"CPU: ($cpu_temp) GPU: ($gpu_temp)"
+        }
       '';
       executable = true;
     };
