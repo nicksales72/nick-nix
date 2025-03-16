@@ -8,6 +8,9 @@
   home.stateVersion = "25.05";
 
   home.packages = with pkgs; [
+    yazi
+    zathura
+    tectonic
     chromium
     clang-tools
     discord
