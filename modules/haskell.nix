@@ -1,5 +1,4 @@
 { config, lib, pkgs, ... }: {
-
   environment.systemPackages = with pkgs; [
     cabal-install
     haskell-language-server
@@ -7,6 +6,7 @@
       regex-base
       regex-pcre
       regex-tdfa
+      regex-compat
     ]))
   ];
 }
