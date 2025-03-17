@@ -15,8 +15,6 @@
     clang-tools
     discord
     prismlauncher
-    cabal-install
-    haskell-language-server
     texlive.combined.scheme-full
   ];
 
