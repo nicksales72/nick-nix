@@ -4,7 +4,9 @@
     cabal-install
     haskell-language-server
     (haskellPackages.ghcWithPackages (ps: with ps; [
-      regex
+      regex-base
+      regex-pcre
+      regex-tdfa
     ]))
   ];
 }
