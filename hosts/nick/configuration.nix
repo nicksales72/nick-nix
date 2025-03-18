@@ -8,7 +8,6 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.blacklistedKernelModules = [ "nouveau" ];
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;

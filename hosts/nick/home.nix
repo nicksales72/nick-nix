@@ -12,7 +12,6 @@
     zathura
     tectonic
     chromium
-    google-chrome
     clang-tools
     discord
     prismlauncher
