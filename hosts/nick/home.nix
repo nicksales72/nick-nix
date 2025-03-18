@@ -14,7 +14,6 @@
     chromium
     clang-tools
     discord
-    prismlauncher
     texlive.combined.scheme-full
   ];
 

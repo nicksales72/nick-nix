@@ -36,7 +36,7 @@
 
       ## Launch Applications
       bindsym $mod+t exec ghostty
-      bindsym $mod+b exec chromium
+      bindsym $mod+b exec nvidia-offload chromium
       bindsym $mod+d exec rofi -show drun
 
       ## Window Management
@@ -79,7 +79,7 @@
       bindsym $mod+r mode "resize"
 
       # Display and Background Settings
-      exec --no-startup-id xrandr --output HDMI-1 --mode 1920x1080 --rate 74.97 --same-as eDP-1 --primary
+      exec --no-startup-id xrandr --output HDMI-A-0 --mode 1920x1080 --rate 74.97 --same-as eDP --primary
       exec --no-startup-id xsetroot -solid "#000000"
 
       # Bar Configuration
