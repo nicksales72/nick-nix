@@ -5,7 +5,7 @@
       extraConfig = ''
         $env.PATH = ($env.PATH | 
         split row (char esep) | 
-        append "/home/nick/.nix-profile/bin/marksman")
+        append "/home/kafka/.nix-profile/bin/marksman")
         '';
     };
   };
