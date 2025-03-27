@@ -1,6 +1,6 @@
 { lib, ... }: {
   imports = [
-    ../modules/user/sway-config.nix
+    ../modules/user/sway-home.nix
     ../modules/user/ghostty.nix
     ../modules/user/nushell.nix
     ../modules/user/tmux.nix
