@@ -21,15 +21,15 @@
       nixosConfigurations = {
         nixos = lib.nixosSystem {
           inherit system;
-          modules = [ ./hosts/nick/configuration.nix ];
+          modules = [ ./hosts/kafka/configuration.nix ];
         };
       };
 
       homeConfigurations = {
-        nick = home-manager.lib.homeManagerConfiguration {
+        kafka = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [
-            ./hosts/nick/home.nix
+            ./hosts/kafka/home.nix
           ];
         };
       };

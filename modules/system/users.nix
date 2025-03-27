@@ -1,5 +1,5 @@
 { config, lib, pkgs, ... }: {
-  users.users.nick = {
+  users.users.kafka = {
     isNormalUser = true;
     shell = "${pkgs.nushell}/bin/nu";
     extraGroups = [ "wheel" "networkmanager" "docker" ]; 

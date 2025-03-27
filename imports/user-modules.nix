@@ -1,13 +1,12 @@
 { lib, ... }: {
   imports = [
-    ../modules/helix.nix
-    ../modules/waybar.nix
-    ../modules/ghostty.nix
-    ../modules/nushell.nix
-    ../modules/tmux.nix
-    ../modules/spotify.nix
-    ../modules/git.nix
-    ../modules/gtk-settings.nix
+    ../modules/user/sway-config.nix
+    ../modules/user/ghostty.nix
+    ../modules/user/nushell.nix
+    ../modules/user/tmux.nix
+    ../modules/user/spotify.nix
+    ../modules/user/git.nix
+    ../modules/user/gtk-settings.nix
   ];
 }
 

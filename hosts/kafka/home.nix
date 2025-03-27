@@ -3,8 +3,8 @@
     ../../imports/user-modules.nix
   ];
 
-  home.username = "nick";
-  home.homeDirectory = "/home/nick";
+  home.username = "kafka";
+  home.homeDirectory = "/home/kafka";
   home.stateVersion = "25.05";
 
   home.packages = with pkgs; [

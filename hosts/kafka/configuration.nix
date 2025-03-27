@@ -22,5 +22,7 @@
 
   services.openssh.enable = true;
 
+  security.polkit.enable = true;
+
   system.stateVersion = "25.05";
 }

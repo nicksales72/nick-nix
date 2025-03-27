@@ -2,12 +2,8 @@
   hardware = {
     opengl = {
       enable = true;
-      driSupport = true;
-      driSupport32Bit = true;  
       extraPackages = with pkgs; [
         amdvlk 
-        rocm-opencl-icd  
-        rocm-opencl-runtime
         libva  
         libva-utils
       ];
@@ -19,7 +15,7 @@
 
   services.power-profiles-daemon.enable = false;  # Conflicts with TLP
 
-  services.displayManager = {
+  services.xserver.displayManager = {
     gdm = {
       enable = true;
       wayland = true;

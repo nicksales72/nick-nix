@@ -2,18 +2,18 @@
 
 def main [] {
     let home_manager_result = (do { 
-        home-manager switch --flake /home/nick/nixos 
+        home-manager switch --flake /home/kafka/nixos 
     } | complete)
 
     if $home_manager_result.exit_code == 0 {
         let nixos_rebuild_result = (do { 
-            sudo nixos-rebuild switch --flake /home/nick/nixos 
+            sudo nixos-rebuild switch --flake /home/kafka/nixos 
         } | complete)
 
         if $nixos_rebuild_result.exit_code == 0 {
-            cd /home/nick/projects/nick-nix
+            cd /home/kafka/Projects/nick-nix
 
-            sudo cp -rf /home/nick/nixos/* .
+            sudo cp -rf /home/kafka/nixos/* .
 
             let current_date = (date now | format date "%Y-%m-%d")
 
