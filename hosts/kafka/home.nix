@@ -13,6 +13,7 @@
     zathura
     clang-tools
     discord
+    tectonic
     texlive.combined.scheme-full
   ];
 
