@@ -4,6 +4,10 @@
     slurp 
     wl-clipboard 
     mako
+    brightnessctl
+    swaylock
+    swayidle
+    sway-audio-idle-inhibit
   ];
 
   services.gnome.gnome-keyring.enable = true;

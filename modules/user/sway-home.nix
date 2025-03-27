@@ -2,6 +2,8 @@
   wayland.windowManager.sway = {
     enable = true;
     package = null;
+    wrapperFeatures.base = true;
+    wrapperFeatures.gtk = true;
     config = rec {
       modifier = "Mod4";
       fonts = {
@@ -80,14 +82,29 @@
       # External Executables
       exec dex --autostart --environment sway
       exec sway-audio-idle-inhibit
-      exec swayidle -w \
-           timeout 270 'brightnessctl set 10%' resume 'brightnessctl set 100%' \
-           timeout 300 'swaylock -f -c 000000' \
-           timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-           before-sleep 'swaylock -f -c 000000'
       exec nm-applet --indicator
     '';
   };
+
+  services = {
+    swayidle = {
+      enable = true;
+      package = pkgs.swayidle;
+      timeouts = [
+        {
+          timeout = 300;
+          command = "${pkgs.swaylock-effects}/bin/swaylock";
+        }
+      ];
+      events = [
+      {
+        event = "before-sleep";
+        command = "${pkgs.swaylock-effects}/bin/swaylock";
+      }
+      ];
+    };
+  };
+
   
   programs.waybar = {
     enable = true;
@@ -180,11 +197,7 @@
 
   home.packages = with pkgs; [
     rofi-wayland
-    brightnessctl
     waybar
-    swaylock
-    swayidle
-    sway-audio-idle-inhibit
     dex
   ];
 }
