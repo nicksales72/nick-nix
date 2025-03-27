@@ -8,10 +8,8 @@
   home.stateVersion = "25.05";
 
   home.packages = with pkgs; [
-    yazi
+    firefox
     zathura
-    tectonic
-    chromium
     clang-tools
     discord
     texlive.combined.scheme-full

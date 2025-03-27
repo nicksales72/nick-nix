@@ -1,7 +1,7 @@
 { lib, ... }: {
   imports = [
     ../modules/helix.nix
-    ../modules/i3blocks.nix
+    ../modules/waybar.nix
     ../modules/ghostty.nix
     ../modules/nushell.nix
     ../modules/tmux.nix
