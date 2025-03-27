@@ -135,47 +135,47 @@
       };
     };
     style = ''
-	* {
-	    color: #FFFFFF;
-	    border: none;
-	    border-radius: 0;
-	    font-family: monospace;
-	}
+      * {
+          color: #FFFFFF;
+          border: none;
+          border-radius: 0;
+          font-family: monospace;
+      }
 
-	window#waybar {
-	    background: rgba(0, 0, 0, 0.8);
-	}
+      window#waybar {
+          background: rgba(0, 0, 0, 0.8);
+      }
 
-	#workspaces button {
-	    color: #FFFFFF;
-	}
+      #workspaces button {
+          color: #FFFFFF;
+      }
 
-	#workspaces button.focused {
-	    color: #FFFFFF;
-	}
+      #workspaces button.focused {
+          color: #FFFFFF;
+      }
 
-	#pulseaudio, 
-	#network, 
-	#custom-cpu_gpu_temp, 
-	#memory, 
-	#temperature, 
-	#battery, 
-	#clock {
-	    color: #FFFFFF;
-	    padding: 0 5px;
-	}
+      #pulseaudio, 
+      #network, 
+      #custom-cpu_gpu_temp, 
+      #memory, 
+      #temperature, 
+      #battery, 
+      #clock {
+          color: #FFFFFF;
+          padding: 0 5px;
+      }
 
-	#temperature.critical {
-	    color: #FFFFFF;
-	}
+      #temperature.critical {
+          color: #FFFFFF;
+      }
 
-	#battery.warning {
-	    color: #FFFFFF;
-	}
+      #battery.warning {
+          color: #FFFFFF;
+      }
 
-	#battery.critical {
-	    color: #FFFFFF;
-	}
+      #battery.critical {
+          color: #FFFFFF;
+      }
     '';
   };
 }
