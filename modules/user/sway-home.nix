@@ -73,11 +73,7 @@
         
         "${modifier}+Shift+c" = "reload";
         "${modifier}+Shift+r" = "restart";
-      };
-      
-      bars = [{
-        command = "waybar";
-      }];
+      }; 
     };
     
     extraConfig = ''
@@ -95,8 +91,6 @@
   
   programs.waybar = {
     enable = true;
-    systemd.enable = true;
-    systemd.target = "graphical-session.target";
     settings = {
       mainBar = {
         layer = "top";
