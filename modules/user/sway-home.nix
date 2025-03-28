@@ -103,17 +103,13 @@
         }
         {
           timeout = 300;
-          command = "${pkgs.swaylock-effects}/bin/swaylock";
+          command = "sh -c '${pkgs.swaylock-effects}/bin/swaylock -f && sleep 3 && systemctl suspend'";
         }
-        {
-          timeout = 350;
-          command = "systemctl suspend";
-       }
       ];
       events = [
         {
           event = "before-sleep";
-          command = "${pkgs.swaylock-effects}/bin/swaylock";
+          command = "${pkgs.swaylock-effects}/bin/swaylock -f";
         }
       ];
     };
