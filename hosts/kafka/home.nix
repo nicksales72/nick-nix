@@ -9,7 +9,6 @@
 
   home.packages = with pkgs; [
     firefox
-    python313
     zathura
     clang-tools
     discord
