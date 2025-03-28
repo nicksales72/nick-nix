@@ -49,10 +49,11 @@
         "XF86AudioRaiseVolume" = "exec --no-startup-id wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+";
         "XF86AudioLowerVolume" = "exec --no-startup-id wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-";
         "XF86AudioMute" = "exec --no-startup-id wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
-        "XF86AudioMicMute" = "exec --no-startup-id wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle";
-        
-        "XF86MonBrightnessUp" = "exec --no-startup-id light -A 25";
-        "XF86MonBrightnessDown" = "exec --no-startup-id light -U 25";
+        "XF86AudioMicMute" = "exec --no-startup-id wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle";        
+        "XF86MonBrightnessUp" = "exec --no-startup-id brightnessctl set +10%";
+        "XF86MonBrightnessDown" = "exec --no-startup-id brightnessctl set 10%-";
+        "Shift+XF86MonBrightnessUp" = "exec --no-startup-id ddcutil setvcp 10 + 10";
+        "Shift+XF86MonBrightnessDown" = "exec --no-startup-id ddcutil setvcp 10 - 10";
         
         "${modifier}+t" = "exec ghostty";
         "${modifier}+b" = "exec firefox";
@@ -98,6 +99,10 @@
       package = pkgs.swayidle;
       timeouts = [
         {
+          timeout = 270;
+          command = "brightnessctl set 10%";
+        }
+        {
           timeout = 300;
           command = "${pkgs.swaylock-effects}/bin/swaylock";
         }
@@ -107,10 +112,14 @@
        }
       ];
       events = [
-      {
-        event = "before-sleep";
-        command = "${pkgs.swaylock-effects}/bin/swaylock";
-      }
+        {
+          event = "before-sleep";
+          command = "${pkgs.swaylock-effects}/bin/swaylock";
+        }
+        {
+          event = "after-resume";
+          command = "brightnessctl set 100%";
+        }
       ];
     };
   };

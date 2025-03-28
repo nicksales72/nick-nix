@@ -4,11 +4,15 @@
     slurp 
     wl-clipboard 
     mako
-    light
+    brightnessctl
+    ddcutil        
+    i2c-tools      
     swaylock
     swayidle
     sway-audio-idle-inhibit
   ];
+
+  hardware.i2c.enable = true;
 
   services.gnome.gnome-keyring.enable = true;
 
