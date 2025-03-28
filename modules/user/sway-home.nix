@@ -79,7 +79,7 @@
       
       bars = [
         {
-          statusCommand = "~/.config/waybar/config";
+          command = "waybar";
         }
       ];
     };
