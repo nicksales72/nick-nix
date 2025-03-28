@@ -79,7 +79,7 @@
       
       bars = [
         {
-          statusCommand = "${pkgs.waybar}/bin/waybar ~/.config/waybar/config";
+          statusCommand = "~/.config/waybar/config";
         }
       ];
     };
