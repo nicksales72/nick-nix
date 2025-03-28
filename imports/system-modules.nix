@@ -1,6 +1,6 @@
 { lib, ... }: {
   imports = [
-    ../modules/system/auto-cpufreq.nix
+    ../modules/system/tlp.nix
     ../modules/system/sway.nix
     ../modules/system/pipewire.nix
     ../modules/system/nix.nix
