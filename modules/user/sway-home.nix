@@ -99,6 +99,7 @@
         {
           timeout = 270;
           command = "brightnessctl set 10%";
+          resumeCommand = "brightnessctl set 100%";
         }
         {
           timeout = 300;
@@ -106,17 +107,13 @@
         }
         {
           timeout = 350;
-          command = "${pkgs.systemd}/bin/systemctl suspend";
+          command = "systemctl suspend";
        }
       ];
       events = [
         {
           event = "before-sleep";
           command = "${pkgs.swaylock-effects}/bin/swaylock";
-        }
-        {
-          event = "after-resume";
-          command = "brightnessctl set 100%";
         }
       ];
     };
