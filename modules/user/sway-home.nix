@@ -51,8 +51,8 @@
         "XF86AudioMute" = "exec --no-startup-id wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
         "XF86AudioMicMute" = "exec --no-startup-id wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle";
         
-        "XF86MonBrightnessUp" = "exec --no-startup-id brightnessctl set 25%+";
-        "XF86MonBrightnessDown" = "exec --no-startup-id brightnessctl set 25%-";
+        "XF86MonBrightnessUp" = "exec --no-startup-id light -A 25";
+        "XF86MonBrightnessDown" = "exec --no-startup-id light -U 25";
         
         "${modifier}+t" = "exec ghostty";
         "${modifier}+b" = "exec firefox";
@@ -101,6 +101,10 @@
           timeout = 300;
           command = "${pkgs.swaylock-effects}/bin/swaylock";
         }
+        {
+          timeout = 350;
+          command = "${pkgs.systemd}/bin/systemctl suspend";
+       }
       ];
       events = [
       {
@@ -110,7 +114,6 @@
       ];
     };
   };
-
   
   programs.waybar = {
     enable = true;

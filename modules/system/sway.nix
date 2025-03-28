@@ -4,7 +4,7 @@
     slurp 
     wl-clipboard 
     mako
-    brightnessctl
+    light
     swaylock
     swayidle
     sway-audio-idle-inhibit
