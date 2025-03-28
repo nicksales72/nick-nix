@@ -52,8 +52,6 @@
         "XF86AudioMicMute" = "exec --no-startup-id wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle";        
         "XF86MonBrightnessUp" = "exec --no-startup-id brightnessctl set +10%";
         "XF86MonBrightnessDown" = "exec --no-startup-id brightnessctl set 10%-";
-        "Shift+XF86MonBrightnessUp" = "exec --no-startup-id ddcutil setvcp 10 + 10";
-        "Shift+XF86MonBrightnessDown" = "exec --no-startup-id ddcutil setvcp 10 - 10";
         
         "${modifier}+t" = "exec ghostty";
         "${modifier}+b" = "exec firefox";

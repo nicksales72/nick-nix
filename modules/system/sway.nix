@@ -5,8 +5,6 @@
     wl-clipboard 
     mako
     brightnessctl
-    ddcutil        
-    i2c-tools      
     swaylock
     swayidle
     sway-audio-idle-inhibit
