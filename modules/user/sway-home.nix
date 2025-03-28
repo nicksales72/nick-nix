@@ -75,7 +75,13 @@
         
         "${modifier}+Shift+c" = "reload";
         "${modifier}+Shift+r" = "restart";
-      }; 
+      };
+      
+      bars = [
+        {
+          statusCommand = "${pkgs.waybar}/bin/waybar ~/.config/waybar/config";
+        }
+      ];
     };
     
     extraConfig = ''
