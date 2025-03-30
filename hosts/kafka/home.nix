@@ -8,6 +8,7 @@
   home.stateVersion = "25.05";
 
   home.packages = with pkgs; [
+    octaveFull
     zathura
     clang-tools
     discord
