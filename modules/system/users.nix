@@ -3,8 +3,8 @@
     isNormalUser = true;
     shell = "${pkgs.nushell}/bin/nu";
     extraGroups = [ "wheel" "networkmanager" "docker" "video" ]; 
-    packages = with pkgs; [ tree feh wget zip unzip vlc clang neovim git
-                            gcc gnumake cmake ghc jdk nodejs R fastfetch ];
+    packages = with pkgs; [ tree feh wget zip unzip clang neovim systemd firefox 
+                            vlc git gcc gnumake cmake ghc jdk nodejs R fastfetch ];
   };
 }
 
