@@ -101,10 +101,10 @@
           command = "brightnessctl set 10%";
           resumeCommand = "brightnessctl set 100%";
         }
-        #{
-         # timeout = 300;
-          #command = "sh -c '${pkgs.swaylock-effects}/bin/swaylock -f && sleep 3 && systemctl suspend'";
-        #}
+        {
+          timeout = 300;
+          command = "${pkgs.swaylock-effects}/bin/swaylock -f && sleep 3sec && ${pkgs.systemd}/bin/systemctl suspend";
+        }
       ];
       events = [
         {
