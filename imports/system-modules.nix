@@ -5,7 +5,6 @@
     ../modules/system/pipewire.nix
     ../modules/system/nix.nix
     ../modules/system/amd.nix
-    ../modules/system/haskell.nix
     ../modules/system/users.nix
   ];
 }
