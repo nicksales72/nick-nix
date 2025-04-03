@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }: {
+{ config, pkgs, ... }: {
   wayland.windowManager.sway = {
     enable = true;
     package = null;

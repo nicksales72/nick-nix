@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }: {
+{ pkgs, ... }: {
   users.users.kafka = {
     isNormalUser = true;
     shell = "${pkgs.nushell}/bin/nu";

@@ -1,4 +1,4 @@
-{ lib, ... }: {
+{ ... }: {
   imports = [
     ../modules/system/tlp.nix
     ../modules/system/sway.nix

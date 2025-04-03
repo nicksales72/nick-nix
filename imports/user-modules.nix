@@ -1,4 +1,4 @@
-{ lib, ... }: {
+{ ... }: {
   imports = [
     ../modules/user/sway-home.nix
     ../modules/user/ghostty.nix
