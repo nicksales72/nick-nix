@@ -13,7 +13,8 @@
     discord
     clang-tools
     ccls
-    jdk
+    nixd
+    texlivePackages.digestif
     texlive.combined.scheme-full
   ];
 
