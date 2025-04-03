@@ -13,6 +13,7 @@
     discord
     clang-tools
     ccls
+    jdk
     texlive.combined.scheme-full
   ];
 
