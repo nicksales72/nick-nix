@@ -12,6 +12,7 @@
     zathura
     discord
     clang-tools
+    ccls
     texlive.combined.scheme-full
   ];
 
