@@ -6,10 +6,10 @@
     ../modules/user/git.nix
     ../modules/user/gtk-settings.nix
     ../modules/user/haskell.nix
-    ../modules/user/lsp.nix
+    ../modules/user/helix.nix
     ../modules/user/nushell.nix
-    ../modules/user/nvim.nix
     ../modules/user/octave.nix
+    ../modules/user/rust.nix
     ../modules/user/spotify.nix
     ../modules/user/sway-home.nix
     ../modules/user/tex.nix
