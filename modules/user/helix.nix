@@ -16,7 +16,7 @@
         };
       };      
       keys.normal = {
-        C-t = ":w :sh tectonic main.tex";
+        C-t = [":w" ":sh tectonic main.tex"];
       };
     };
     extraPackages = with pkgs; [
