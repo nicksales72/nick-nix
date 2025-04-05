@@ -3,7 +3,7 @@
     enable = true;
     defaultEditor = true;
     settings = {
-      theme = "everforest_dark";
+      theme = "penumbra+";
       editor = {
         line-number = "relative";
         soft-wrap = {
