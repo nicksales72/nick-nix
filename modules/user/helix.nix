@@ -3,7 +3,7 @@
     enable = true;
     defaultEditor = true;
     settings = {
-      theme = "jetbrains_dark";
+      theme = "varua";
       editor = {
         line-number = "relative";
         soft-wrap = {
