@@ -31,7 +31,9 @@
       input = {
         "*" = {
           accel_profile = "flat";
-          pointer_accel = "0";
+        };
+        "11145:67:UGREEN_Mouse" = {
+          pointer_accel = "-0.5"; 
         };
         "1267:12739:ELAN050B:00_04F3:31C3_Touchpad" = {
           dwt = "enabled";
@@ -40,6 +42,7 @@
           scroll_factor = "0.2";
           clickfinger_button_map = "lrm";
           middle_emulation = "enabled";
+          pointer_accel = "0"; 
         };
       };
       
