@@ -35,7 +35,6 @@
         };
         "1267:12739:ELAN050B:00_04F3:31C3_Touchpad" = {
           dwt = "enabled";
-          tap = "disabled";
           natural_scroll = "enabled";
           scroll_factor = "0.2";
           clickfinger_button_map = "lrm";
