@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ ... }: {
   programs.tmux = {
     enable = true;
     clock24 = true;
@@ -6,9 +6,6 @@
     extraConfig = ''
       # Set default terminal
       set -g default-terminal "screen-256color"
-
-      # set shell     
-      set -g default-shell ${pkgs.nushell}/bin/nu
 
       # Enable mouse support
       set -g mouse on
