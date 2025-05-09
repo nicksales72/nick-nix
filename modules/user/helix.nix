@@ -26,6 +26,7 @@
       rust-analyzer-unwrapped
       texlab
       ruff
+      tectonic
       nil
     ];
   };
