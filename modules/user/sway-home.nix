@@ -162,7 +162,7 @@
         };
         
         clock = {
-          format = "| {:%Y-%m-%d %H:%M:%S}";
+          format = "| {:%Y-%m-%d %I:%M %p}";
           interval = 1;
         };
       };
