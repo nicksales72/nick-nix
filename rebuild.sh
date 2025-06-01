@@ -2,8 +2,8 @@
 
 set -euo pipefail
 
-NIX_PATH="/home/kafka/nixos"
-SYNC_PATH="/home/kafka/Projects/nick-nix"
+NIX_PATH="/home/nick/nixos"
+SYNC_PATH="/home/nick/Projects/nick-nix"
 
 if home-manager switch --flake "$NIX_PATH"; then
     if sudo nixos-rebuild switch --flake "$NIX_PATH"; then 
