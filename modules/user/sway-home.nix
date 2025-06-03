@@ -19,12 +19,14 @@
         "HDMI-A-1" = {
           mode = "1920x1080@74.97Hz";
           pos = "0 0";
+          bg = "/home/nick/Pictures/1.jpg fill";
         };
         "eDP-1" = {
           pos = "0 0";
+          bg = "/home/nick/Pictures/1.jpg fill";
         };
         "*" = {
-          bg = "#000000 solid_color";
+          bg = "/home/nick/Pictures/1.jpg fill";
         };
       };
       
