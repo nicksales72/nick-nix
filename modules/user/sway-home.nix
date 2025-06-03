@@ -35,10 +35,10 @@
           accel_profile = "flat";
           pointer_accel = "0"; 
         };
-	"1149:8264:Kensington_Eagle_Trackball" = {
+	      "1149:8264:Kensington_Eagle_Trackball" = {
           pointer_accel = "-0.5"; 
           scroll_factor = "0.5";
-	};
+	      };
         "1267:12739:ELAN050B:00_04F3:31C3_Touchpad" = {
           dwt = "enabled";
           tap = "enabled";
