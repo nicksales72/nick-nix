@@ -9,6 +9,7 @@
       };
       extensions = with pkgs; [
         vscode-extensions.vscodevim.vim
+	vscode-extensions.shd101wyy.markdown-preview-enhanced
       ];
     };
   };
