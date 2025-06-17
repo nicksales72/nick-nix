@@ -22,7 +22,7 @@
           bg = "/home/nick/Pictures/1.jpg fill";
         };
         "eDP-1" = {
-          pos = "0 0";
+          pos = "0 1080";
           bg = "/home/nick/Pictures/1.jpg fill";
         };
         "*" = {
