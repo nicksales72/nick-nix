@@ -102,6 +102,10 @@
     swayidle = {
       enable = true;
       package = pkgs.swayidle;
+      extraArgs = [
+        "-w"          # keep it in the foreground (default in HM, but repeat so we don’t lose it)
+        "--inhibit"   # respect external inhibitors like sway-audio-idle-inhibit
+      ];
       timeouts = [
         {
           timeout = 270;
