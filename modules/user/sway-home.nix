@@ -91,9 +91,8 @@
     };
     
     extraConfig = ''
-      exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-      exec systemd-run --user --scope sway-audio-idle-inhibit
       exec dex --autostart --environment sway
+      exec sway-audio-idle-inhibit
       exec nm-applet --indicator
     '';
   };
@@ -102,10 +101,6 @@
     swayidle = {
       enable = true;
       package = pkgs.swayidle;
-      extraArgs = [
-        "-w"         
-        "--inhibit"  
-      ];
       timeouts = [
         {
           timeout = 270;
