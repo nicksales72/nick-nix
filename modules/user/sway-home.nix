@@ -61,7 +61,7 @@
         "${modifier}+Shift+s" = "exec grim -g \"$(slurp)\" ~/Pictures/$(date +%Y-%m-%d_%H-%M-%S).png";
         
         "${modifier}+t" = "exec ghostty";
-        "${modifier}+b" = "exec firefox";
+        "${modifier}+b" = "exec chromium";
         "${modifier}+d" = "exec rofi -show drun";
         
         "${modifier}+Shift+q" = "kill";
