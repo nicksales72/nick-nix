@@ -91,9 +91,9 @@
     };
     
     extraConfig = ''
-      # External Executables
+      exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+      exec systemd-run --user --scope sway-audio-idle-inhibit
       exec dex --autostart --environment sway
-      exec sway-audio-idle-inhibit
       exec nm-applet --indicator
     '';
   };
@@ -103,8 +103,8 @@
       enable = true;
       package = pkgs.swayidle;
       extraArgs = [
-        "-w"          # keep it in the foreground (default in HM, but repeat so we don’t lose it)
-        "--inhibit"   # respect external inhibitors like sway-audio-idle-inhibit
+        "-w"         
+        "--inhibit"  
       ];
       timeouts = [
         {
