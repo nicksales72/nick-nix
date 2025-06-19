@@ -9,6 +9,7 @@
     swaylock
     swayidle
     sway-audio-idle-inhibit
+    wayland-pipewire-idle-inhibit
   ];
 
   hardware.i2c.enable = true;

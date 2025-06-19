@@ -93,6 +93,7 @@
     extraConfig = ''
       exec dex --autostart --environment sway
       exec sway-audio-idle-inhibit
+      exec wayland-pipewire-idle-inhibit
       exec nm-applet --indicator
     '';
   };
