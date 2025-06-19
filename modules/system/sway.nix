@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
     grim     
+    upower
     slurp 
     wl-clipboard 
     mako
@@ -13,6 +14,7 @@
   hardware.i2c.enable = true;
 
   services.gnome.gnome-keyring.enable = true;
+  services.upower.enable = true;
 
   programs.sway = {
     enable = true;
