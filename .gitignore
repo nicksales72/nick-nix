@@ -2,7 +2,7 @@
 
 !*/
 !*.nix
-!rebuild.sh
+!rebuild.nu
 !flake.lock
 !kwin.kksrc
 !README.md
