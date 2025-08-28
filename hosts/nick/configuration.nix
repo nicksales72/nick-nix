@@ -13,6 +13,11 @@
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
 
+  services.displayManager.sddm.enable = true;
+  services.desktopManager.plasma6.enable = true;
+
+  services.power-profiles-daemon.enable = true;
+
   time.timeZone = "Canada/Eastern";
   i18n.defaultLocale = "en_US.UTF-8";
 
@@ -24,5 +29,5 @@
 
   security.polkit.enable = true;
 
-  system.stateVersion = "25.11";
+  system.stateVersion = "25.05";
 }
