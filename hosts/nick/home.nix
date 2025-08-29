@@ -18,6 +18,7 @@
     cargo
     rustc
     spotify
+    vial
     texlive.combined.scheme-full
   ];
 
