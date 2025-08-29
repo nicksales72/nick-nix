@@ -1,4 +1,4 @@
-{ ... }: {
+{ pkgs, ... }: {
   imports = [
     ./hardware-configuration.nix
     ../../imports/system-modules.nix
@@ -18,6 +18,8 @@
 
   services.power-profiles-daemon.enable = true;
 
+  environment.plasma6.excludePackages = with pkgs; [ kdePackages.konsole kdePackages.dolphin kdePackages.elisa kdePackages.kate ];
+
   time.timeZone = "Canada/Eastern";
   i18n.defaultLocale = "en_US.UTF-8";
 
@@ -29,5 +31,5 @@
 
   security.polkit.enable = true;
 
-  system.stateVersion = "25.05";
+  system.stateVersion = "25.11";
 }
