@@ -3,7 +3,7 @@
     enable = true;
     defaultEditor = true;
     settings = {
-      theme = "gruber-darker";
+      theme = "gruvbox-material";
       editor = {
         line-number = "relative";
         soft-wrap = {
