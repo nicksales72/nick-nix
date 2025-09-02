@@ -35,7 +35,6 @@
       ];
 
       bind = [
-        "SUPER_SHIFT, C, exec, hyprctl reload"
         "SUPER_SHIFT, R, exec, hyprctl reload"
         "SUPER_SHIFT, equal, togglefloating"
         "SUPER, Q, killactive"
