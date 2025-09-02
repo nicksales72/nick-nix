@@ -13,6 +13,13 @@
         };
       };
 
+      env = [
+        "HYPRCURSOR_THEME,rose-pine-hyprcursor"
+        "HYPRCURSOR_SIZE,24"
+        "XCURSOR_THEME,rose-pine-hyprcursor"
+        "XCURSOR_SIZE,24"
+      ];
+
       device = [
         {
           name = "rapoo-rapoo-gaming-device";
@@ -72,13 +79,14 @@
         "nm-applet --indicator"
         "otd-daemon"
         "dex --autostart --environment hyprland"
+        "hyprctl setcursor rose-pine-hyprcursor 24"
       ];
     };
   };
 
   home.packages = with pkgs; [
-    grim slurp brightnessctl wl-clipboard
-    hypridle hyprpaper hyprlock
+    grim slurp brightnessctl wl-clipboard hyprcursor
+    hypridle hyprpaper hyprlock rose-pine-hyprcursor
   ];
 }
 
