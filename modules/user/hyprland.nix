@@ -80,13 +80,15 @@
         "otd-daemon"
         "dex --autostart --environment hyprland"
         "hyprctl setcursor rose-pine-hyprcursor 24"
+        "gsettings set org.gnome.desktop.interface cursor-theme BreezeX-RosePine-Linux"
+        "gsettings set org.gnome.desktop.interface cursor-size 24"
       ];
     };
   };
 
   home.packages = with pkgs; [
-    grim slurp brightnessctl wl-clipboard hyprcursor
-    hypridle hyprpaper hyprlock rose-pine-hyprcursor
+    grim slurp brightnessctl wl-clipboard
+    hyprcursor hypridle hyprpaper hyprlock 
   ];
 }
 

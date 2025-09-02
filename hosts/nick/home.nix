@@ -11,18 +11,6 @@
 
   home.file = { };
 
-  home.pointerCursor = {
-    name = "rose-pine-hyprcursor";
-    package = pkgs.rose-pine-hyprcursor;
-    size = 24;
-    gtk.enable = true;
-
-    hyprcursor = {
-      enable = true;
-      size = 24;
-    };
-  };
-
   home.packages = with pkgs; [
     discord
     clang-tools
@@ -33,7 +21,9 @@
     rustc
     spotify
     vial
+    nwg-look
     rose-pine-cursor
+    rose-pine-hyprcursor
     texlive.combined.scheme-full
   ];
 
