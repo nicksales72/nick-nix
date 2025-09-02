@@ -4,12 +4,13 @@
     ../../imports/system-modules.nix
   ];
 
+  programs.hyprland.enable = true;
+
   nixpkgs.config.allowUnfree = true;
 
   boot.initrd.luks.devices."luks-4fa73b39-3452-4459-bd1b-bbcd578e28da".device = "/dev/disk/by-uuid/4fa73b39-3452-4459-bd1b-bbcd578e28da";
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.blacklistedKernelModules = [ "nouveau" ];
 
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;  
@@ -30,6 +31,4 @@
   security.polkit.enable = true;
 
   system.stateVersion = "25.11";
-
-  programs.hyprland.enable = true;
 }
