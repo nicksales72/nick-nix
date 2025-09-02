@@ -22,13 +22,11 @@ def main [] {
             git push
 
             echo "Dotfiles update and sync completed successfully!"
-        }
-        else {
+        } else {
             echo "NixOS rebuild failed. Stopping process."
             echo $"Error output: ($nixos_rebuild_result.stderr)"
         }
-    }
-    else {
+    } else {
         echo "Home-manager switch failed. Stopping process."
         echo $"Error output: ($home_manager_result.stderr)"
     }

@@ -21,9 +21,6 @@
 
   services.udev.packages = with pkgs; [ vial ];
 
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
-
   services.power-profiles-daemon.enable = true;
 
   services.printing.enable = true;
@@ -34,5 +31,5 @@
 
   system.stateVersion = "25.11";
 
-  environment.plasma6.excludePackages = with pkgs; [ kdePackages.konsole kdePackages.dolphin kdePackages.elisa kdePackages.kate ];
+  programs.hyprland.enable = true;
 }
