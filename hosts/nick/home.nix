@@ -12,8 +12,8 @@
   home.file = { };
 
   home.pointerCursor = {
-    name = "rose-pine-hyprcursor";
-    package = pkgs.rose-pine-hyprcursor;
+    name = "rose-pine-cursor";
+    package = pkgs.rose-pine-cursor;
     size = 24;
     gtk.enable = true;
 
@@ -33,6 +33,7 @@
     rustc
     spotify
     vial
+    rose-pine-cursor
     texlive.combined.scheme-full
   ];
 
