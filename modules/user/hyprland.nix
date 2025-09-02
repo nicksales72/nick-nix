@@ -78,7 +78,7 @@
 
   home.packages = with pkgs; [
     grim slurp brightnessctl wl-clipboard
-    rofi-wayland hypridle hyprpaper hyprlock
+    hypridle hyprpaper hyprlock
   ];
 }
 
