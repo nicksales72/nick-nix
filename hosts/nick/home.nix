@@ -11,6 +11,15 @@
 
   home.file = { };
 
+  home.pointerCursor = {
+    name = "rose-pine-cursor";
+    package = pkgs.rose-pine-cursor;
+    size = 24;
+    gtk.enable = true;
+    x11.enable = true;
+    x11.defaultCursor = pkgs.rose-pine-cursor;
+  };
+
   home.packages = with pkgs; [
     discord
     clang-tools
@@ -21,7 +30,6 @@
     rustc
     spotify
     vial
-    nwg-look
     rose-pine-cursor
     rose-pine-hyprcursor
     texlive.combined.scheme-full

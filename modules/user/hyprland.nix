@@ -18,6 +18,7 @@
         "HYPRCURSOR_SIZE,24"
         "XCURSOR_THEME,rose-pine-hyprcursor"
         "XCURSOR_SIZE,24"
+        "NIXOS_OZONE_WL, 1"
       ];
 
       device = [
@@ -80,8 +81,6 @@
         "otd-daemon"
         "dex --autostart --environment hyprland"
         "hyprctl setcursor rose-pine-hyprcursor 24"
-        "gsettings set org.gnome.desktop.interface cursor-theme BreezeX-RosePine-Linux"
-        "gsettings set org.gnome.desktop.interface cursor-size 24"
       ];
     };
   };
