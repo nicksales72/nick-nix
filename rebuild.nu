@@ -1,33 +1,42 @@
 #!/usr/bin/env nu
 
 def main [] {
-    let home_manager_result = (do { 
-        home-manager switch --flake /home/nick/nixos 
-    } | complete)
+    let nixos_flake = "/home/nick/nixos"
+    let projects_dir = "/home/nick/Projects/nick-nix"
 
-    if $home_manager_result.exit_code == 0 {
-        let nixos_rebuild_result = (do { 
-            sudo nixos-rebuild switch --flake /home/nick/nixos 
-        } | complete)
+    home-manager switch --flake $nixos_flake
+    if $env.LAST_EXIT_CODE != 0 {
+        echo $"Home-manager switch failed (exit ($env.LAST_EXIT_CODE)). Stopping."
+        return $env.LAST_EXIT_CODE
+    }
 
-        if $nixos_rebuild_result.exit_code == 0 {
-            cd /home/nick/Projects/nick-nix
+    sudo nixos-rebuild switch --flake $nixos_flake
+    if $env.LAST_EXIT_CODE != 0 {
+        echo $"NixOS rebuild failed (exit ($env.LAST_EXIT_CODE)). Stopping."
+        return $env.LAST_EXIT_CODE
+    }
 
-            sudo cp -rf /home/nick/nixos/* .
+    cd $projects_dir
 
-            let current_date = (date now | format date "%Y-%m-%d")
+    sudo cp -rf $"($nixos_flake)/." .
 
-            git add .
-            git commit -m $"Updated ($current_date)"
-            git push
+    let current_date = (date now | format date "%Y-%m-%d")
 
-            echo "Dotfiles update and sync completed successfully!"
-        } else {
-            echo "NixOS rebuild failed. Stopping process."
-            echo $"Error output: ($nixos_rebuild_result.stderr)"
+    git add .
+
+    if ((git status --porcelain | lines | length) > 0) {
+        git commit -m $"Updated ($current_date)"
+        if $env.LAST_EXIT_CODE != 0 { 
+            echo $"git commit failed (exit ($env.LAST_EXIT_CODE))."
+            return $env.LAST_EXIT_CODE
         }
+        git push
+        if $env.LAST_EXIT_CODE != 0 { 
+            echo $"git push failed (exit ($env.LAST_EXIT_CODE))."
+            return $env.LAST_EXIT_CODE
+        }
+        echo "Dotfiles update and sync completed successfully!"
     } else {
-        echo "Home-manager switch failed. Stopping process."
-        echo $"Error output: ($home_manager_result.stderr)"
+        echo "No changes to commit. Done."
     }
 }

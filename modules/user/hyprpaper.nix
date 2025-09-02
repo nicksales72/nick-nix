@@ -2,8 +2,8 @@
   services.hyprpaper = {
     enable = true;
     settings = {
-      preload = "/usr/share/hypr/wall0.png";
-      wallpaper = ", /usr/share/hypr/wall0.png";
+      preload = "/home/nick/Pictures/wallpaper.jpg";
+      wallpaper = ", /home/nick/Pictures/wallpaper.jpg";
     };
   };
 }
