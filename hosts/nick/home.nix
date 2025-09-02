@@ -12,8 +12,8 @@
   home.file = { };
 
   home.pointerCursor = {
-    name = "rose-pine-cursor";
-    package = pkgs.rose-pine-cursor;
+    name = "rose-pine-hyprcursor";
+    package = pkgs.rose-pine-hyprcursor;
     size = 24;
     gtk.enable = true;
 
