@@ -22,7 +22,7 @@
 
   services.udev.packages = with pkgs; [ vial ];
 
-  services.power-profiles-daemon.enable = true;
+  services.power-profiles-daemon.enable = false;
 
   services.printing.enable = true;
 
