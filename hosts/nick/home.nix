@@ -30,7 +30,6 @@
     vial
     clang-tools
     cabal-install
-    davinci-resolve
     rose-pine-cursor
     rose-pine-hyprcursor
     texlive.combined.scheme-full
