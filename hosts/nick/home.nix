@@ -22,14 +22,15 @@
 
   home.packages = with pkgs; [
     discord
-    clang-tools
     gimp
-    cabal-install
     lean4
     cargo
     rustc
     spotify
     vial
+    clang-tools
+    cabal-install
+    davinci-resolve
     rose-pine-cursor
     rose-pine-hyprcursor
     texlive.combined.scheme-full
