@@ -11,6 +11,8 @@
           natural_scroll = true;
           disable_while_typing = true;
           scroll_factor = 0.1;
+          tap_button = 3;
+          tap_button_delay = 0;
         };
       };
 
