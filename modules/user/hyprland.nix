@@ -10,6 +10,7 @@
         touchpad = {
           natural_scroll = true;
           disable_while_typing = true;
+          clickfinger_behavior = true;
           tap_button_map = "lrm";
           scroll_factor = 0.1;
         };
