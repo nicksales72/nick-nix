@@ -56,14 +56,14 @@
         "SUPER, T, exec, ghostty"
         "SUPER, D, exec, rofi -show drun"
 
-        "SUPER, 1, workspace, 1"
-        "SUPER, 2, workspace, 2"
-        "SUPER, 3, workspace, 3"
-        "SUPER, 4, workspace, 4"
-        "SUPER_SHIFT, 1, movetoworkspace, 1"
-        "SUPER_SHIFT, 2, movetoworkspace, 2"
-        "SUPER_SHIFT, 3, movetoworkspace, 3"
-        "SUPER_SHIFT, 4, movetoworkspace, 4"
+        "ALT, q, workspace, 1"
+        "ALT, w, workspace, 2"
+        "ALT, e, workspace, 3"
+        "ALT, r, workspace, 4"
+        "ALT_SHIFT, q, movetoworkspace, 1"
+        "ALT_SHIFT, w, movetoworkspace, 2"
+        "ALT_SHIFT, e, movetoworkspace, 3"
+        "ALT_SHIFT, r, movetoworkspace, 4"
 
         "SUPER_SHIFT, S, exec, bash -lc 'grim -g \"$(slurp)\" ~/Pictures/$(date +%Y-%m-%d_%H-%M-%S).png'"
 
