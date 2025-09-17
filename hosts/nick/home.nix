@@ -28,7 +28,6 @@
     cargo
     rustc
     spotify
-    zathura
     clang-tools
     cabal-install
     rose-pine-cursor
