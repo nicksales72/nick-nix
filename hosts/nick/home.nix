@@ -23,11 +23,12 @@
   home.packages = with pkgs; [
     discord
     gimp
+    vial
     lean4
     cargo
     rustc
     spotify
-    vial
+    zathura
     clang-tools
     cabal-install
     rose-pine-cursor

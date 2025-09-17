@@ -8,7 +8,6 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  boot.initrd.luks.devices."luks-4fa73b39-3452-4459-bd1b-bbcd578e28da".device = "/dev/disk/by-uuid/4fa73b39-3452-4459-bd1b-bbcd578e28da";
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -31,4 +30,6 @@
   security.polkit.enable = true;
 
   system.stateVersion = "25.11";
+
+  boot.initrd.luks.devices."luks-6bda98b8-98a6-4733-bd10-8539cbf8008f".device = "/dev/disk/by-uuid/6bda98b8-98a6-4733-bd10-8539cbf8008f";
 }
