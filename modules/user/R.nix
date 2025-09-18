@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 let
   rWithPkgs = pkgs.rWrapper.override {
     packages = with pkgs.rPackages; [ rmarkdown pandoc ];

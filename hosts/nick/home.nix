@@ -22,6 +22,7 @@
 
   home.packages = with pkgs; [
     discord
+    pandoc
     gimp
     vial
     lean4
