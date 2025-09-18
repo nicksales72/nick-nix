@@ -34,5 +34,4 @@
     rose-pine-hyprcursor
     texlive.combined.scheme-full
   ];
-
 }
