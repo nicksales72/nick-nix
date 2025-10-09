@@ -21,7 +21,6 @@
   };
 
   home.packages = with pkgs; [
-    inputs.hyprscratch.packages.${system}.default
     discord
     pandoc
     gimp

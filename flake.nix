@@ -7,13 +7,9 @@
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    hyprscratch = {
-      url = "github:sashetophizika/hyprscratch";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprscratch, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, ... }@inputs:
     let 
       lib = nixpkgs.lib;
       system = "x86_64-linux";
