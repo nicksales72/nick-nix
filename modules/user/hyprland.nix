@@ -69,7 +69,7 @@
         ", XF86MonBrightnessUp,   exec, brightnessctl set +10%"
       ];
 
-      workspacerule = [
+      workspace = [
 	"special:scratchpad, float"
 	"special:scratchpad, move center"
 	"special:scratchpad, size 80% 80%"
