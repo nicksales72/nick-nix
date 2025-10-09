@@ -31,5 +31,5 @@
 
   system.stateVersion = "25.11";
 
-  boot.initrd.luks.devices."luks-6bda98b8-98a6-4733-bd10-8539cbf8008f".device = "/dev/disk/by-uuid/6bda98b8-98a6-4733-bd10-8539cbf8008f";
+  boot.initrd.luks.devices."luks-7ba6e4fa-19f6-4f9b-99a1-d0b939042793".device = "/dev/disk/by-uuid/7ba6e4fa-19f6-4f9b-99a1-d0b939042793";
 }

@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ inputs, pkgs, ... }: {
   imports = [
     ../../imports/user-modules.nix
   ];
@@ -21,6 +21,7 @@
   };
 
   home.packages = with pkgs; [
+    inputs.hyprscratch.packages.${system}.default
     discord
     pandoc
     gimp

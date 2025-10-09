@@ -21,6 +21,26 @@
         "type": "github"
       }
     },
+    "hyprscratch": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1758827221,
+        "narHash": "sha256-cKKE1DbNmpYQzCjf0LVYMwBC9jrk490U59gL5sORdGg=",
+        "owner": "sashetophizika",
+        "repo": "hyprscratch",
+        "rev": "bab0e86ca37c50253af336c3aba34c301ac96874",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sashetophizika",
+        "repo": "hyprscratch",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1756266583,
@@ -40,6 +60,7 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
+        "hyprscratch": "hyprscratch",
         "nixpkgs": "nixpkgs"
       }
     }
