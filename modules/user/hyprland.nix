@@ -69,10 +69,10 @@
         ", XF86MonBrightnessUp,   exec, brightnessctl set +10%"
       ];
 
-      windowrule = [
-	"float, workspace special"
-	"move center, workspace special"
-	"size 80% 80%, workspace special"
+      workspacerule = [
+	"special:scratchpad, float"
+	"special:scratchpad, move center"
+	"special:scratchpad, size 80% 80%"
       ];
 
       "exec-once" = [
