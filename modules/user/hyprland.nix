@@ -37,7 +37,7 @@
       ];
 
       bind = [
-        "SUPER_SHIFT, R, exec, hyprctl reload"
+  	"SUPER_SHIFT, R, exec, hyprctl reload"
         "SUPER_SHIFT, equal, togglefloating"
         "SUPER, Q, killactive"
         "SUPER, F, fullscreen, toggle"
@@ -56,14 +56,8 @@
         "SUPER, T, exec, ghostty"
         "SUPER, D, exec, rofi -show drun"
 
-        "ALT, q, workspace, 1"
-        "ALT, w, workspace, 2"
-        "ALT, e, workspace, 3"
-        "ALT, r, workspace, 4"
-        "ALT_SHIFT, q, movetoworkspace, 1"
-        "ALT_SHIFT, w, movetoworkspace, 2"
-        "ALT_SHIFT, e, movetoworkspace, 3"
-        "ALT_SHIFT, r, movetoworkspace, 4"
+	"SUPER_SHIFT, minus, movetoworkspacesilent, special"
+	"SUPER, minus, togglespecialworkspace"
 
         "SUPER_SHIFT, S, exec, bash -lc 'grim -g \"$(slurp)\" ~/Pictures/$(date +%Y-%m-%d_%H-%M-%S).png'"
 
@@ -75,10 +69,17 @@
         ", XF86MonBrightnessUp,   exec, brightnessctl set +10%"
       ];
 
+      windowrule = [
+	"float, workspace special"
+	"move center, workspace special"
+	"size 80% 80%, workspace special"
+      ];
+
       "exec-once" = [
         "waybar"
         "hypridle"
         "hyprpaper"
+	"hyprscratch init"
         "nm-applet --indicator"
         "otd-daemon"
         "dex --autostart --environment hyprland"
