@@ -38,7 +38,6 @@
 
       bind = [
   	"SUPER_SHIFT, R, exec, hyprctl reload"
-        "SUPER_SHIFT, equal, togglefloating"
         "SUPER, Q, killactive"
         "SUPER, F, fullscreen, toggle"
 
@@ -57,6 +56,7 @@
         "SUPER, D, exec, rofi -show drun"
 
 	"SUPER_SHIFT, minus, movetoworkspacesilent, special"
+	"SUPER_SHIFT, equal, movetoworkspacesilent, special"
 	"SUPER, minus, togglespecialworkspace"
 
         "SUPER_SHIFT, S, exec, bash -lc 'grim -g \"$(slurp)\" ~/Pictures/$(date +%Y-%m-%d_%H-%M-%S).png'"
@@ -72,14 +72,13 @@
       workspace = [
 	"special:scratchpad, float"
 	"special:scratchpad, move center"
-	"special:scratchpad, size 80% 80%"
+	"special:scratchpad, size 50% 50%"
       ];
 
       "exec-once" = [
         "waybar"
         "hypridle"
         "hyprpaper"
-	"hyprscratch init"
         "nm-applet --indicator"
         "otd-daemon"
         "dex --autostart --environment hyprland"

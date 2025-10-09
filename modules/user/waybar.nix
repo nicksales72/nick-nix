@@ -7,7 +7,6 @@
         position = "bottom";
         height = 30;
 
-        "modules-left"   = [ "hyprland/workspaces" "hyprland/submap" ];
         "modules-center" = [ ];
         "modules-right"  = [ "pulseaudio" "network" "memory" "temperature" "battery" "clock" ];
 
@@ -37,19 +36,6 @@
           "critical-threshold" = 80;
           format = "| TEMP: {temperatureC}°C {icon}";
         };
-        "hyprland/workspaces" = {
-          format = "{icon} {name}";
-          "on-click" = "hyprctl dispatch workspace {id}";
-          "format-icons" = {
-            "1" = "";
-            "2" = "";
-            "3" = "";
-            "4" = "";
-            urgent = "";
-            active = "";
-            default = "";
-          };
-        };
       }
     ];
 
@@ -63,14 +49,6 @@
 
       window#waybar {
           background: rgba(0, 0, 0, 0.5);
-      }
-
-      #workspaces button {
-          color: #FFFFFF;
-      }
-
-      #workspaces button.focused {
-          color: #FFFFFF;
       }
 
       #pulseaudio,
