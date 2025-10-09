@@ -28,7 +28,6 @@
     lean4
     cargo
     rustc
-    spotify
     clang-tools
     cabal-install
     rose-pine-cursor
