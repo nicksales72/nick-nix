@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   # will write neovim config here when not lazy
   home.packages = with pkgs; [
+    tree-sitter
     # lsps
     nixd
     ccls
