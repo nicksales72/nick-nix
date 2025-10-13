@@ -22,6 +22,7 @@
 
   home.packages = with pkgs; [
     discord
+    spotify
     pandoc
     gimp
     vial
