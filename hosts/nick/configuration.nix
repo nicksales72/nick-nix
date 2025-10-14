@@ -19,6 +19,11 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  services.logind.settings.Login = {
+    HandlePowerKey = "suspend";
+    HandlePowerKeyLongPress = "poweroff";
+  };
+
   services.udev.packages = with pkgs; [ vial ];
 
   services.power-profiles-daemon.enable = false;
