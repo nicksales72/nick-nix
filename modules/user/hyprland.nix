@@ -32,12 +32,12 @@
       ];
 
       monitor = [
-        "HDMI-A-1, 1920x1080@74.97, 0x0, 1, mirror, eDP-1"
+        "HDMI-A-1, 2560x1440@144.00, 1920x0, 1"
         "eDP-1, preferred, 0x0, 1"
       ];
 
       bind = [
-  	"SUPER_SHIFT, R, exec, hyprctl reload"
+      	"SUPER_SHIFT, R, exec, hyprctl reload"
         "SUPER, Q, killactive"
         "SUPER, F, fullscreen, toggle"
 
@@ -55,9 +55,9 @@
         "SUPER, T, exec, ghostty"
         "SUPER, D, exec, rofi -show drun"
 
-	"SUPER_SHIFT, minus, movetoworkspacesilent, special"
-	"SUPER_SHIFT, equal, movetoworkspacesilent, 1"
-	"SUPER, minus, togglespecialworkspace"
+      	"SUPER_SHIFT, minus, movetoworkspacesilent, special"
+      	"SUPER_SHIFT, equal, movetoworkspacesilent, 1"
+      	"SUPER, minus, togglespecialworkspace"
 
         "SUPER_SHIFT, S, exec, bash -lc 'grim -g \"$(slurp)\" ~/Pictures/$(date +%Y-%m-%d_%H-%M-%S).png'"
 
@@ -70,9 +70,9 @@
       ];
 
       workspace = [
-	"special:scratchpad, float"
-	"special:scratchpad, move center"
-	"special:scratchpad, size 50% 50%"
+      	"special:scratchpad, float"
+      	"special:scratchpad, move center"
+      	"special:scratchpad, size 50% 50%"
       ];
 
       "exec-once" = [
