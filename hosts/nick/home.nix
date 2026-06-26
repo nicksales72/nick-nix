@@ -17,7 +17,7 @@
     size = 24;
     gtk.enable = true;
     x11.enable = true;
-    x11.defaultCursor = pkgs.rose-pine-cursor;
+    x11.defaultCursor = "rose-pine-cursor";
   };
 
   home.packages = with pkgs; [

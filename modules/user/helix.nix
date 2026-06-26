@@ -27,6 +27,7 @@
       texlab
       ruff
       nil
+      marksman
     ];
   };
 }
